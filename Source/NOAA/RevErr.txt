@@ -1,0 +1,30 @@
+Error at token  StructLayout( LayoutKind.Sequential, CharSet=CharSet.Ansi, Pack=2 )]
+
+Error at token  StructLayout( LayoutKind.Sequential, CharSet=CharSet.Ansi, Pack=2 )]
+
+Error at token  StructLayout( LayoutKind.Sequential, CharSet=CharSet.Ansi, Pack=2 )]
+
+Error at token  StructLayout( LayoutKind.Sequential, CharSet=CharSet.Ansi, Pack=2 )]
+
+Error at token  StructLayout( LayoutKind.Sequential, CharSet=CharSet.Ansi, Pack=2 )]
+
+Error at token MarshalAs(UnmanagedType.ByValArray, SizeConst=11)]
+
+Error at token  StructLayout( LayoutKind.Sequential, CharSet=CharSet.Ansi, Pack=2 )]
+
+Error at token MarshalAs(UnmanagedType.ByValArray, SizeConst=NMISC)]
+
+Error at token  StructLayout( LayoutKind.Sequential, CharSet=CharSet.Ansi, Pack=2 )]
+
+Error at token  StructLayout( LayoutKind.Sequential, CharSet=CharSet.Ansi, Pack=2 )]
+
+Error at token MarshalAs(UnmanagedType.ByValArray, SizeConst=31)]
+
+Error at token MarshalAs(UnmanagedType.ByValArray, SizeConst=(2*MAXBW))]
+
+Error at token  StructLayout( LayoutKind.Sequential, CharSet=CharSet.Ansi, Pack=2 )]
+
+Error at token MarshalAs(UnmanagedType.ByValArray, SizeConst=31)]
+
+Error at token  StructLayout( LayoutKind.Sequential, CharSet=CharSet.Ansi, Pack=2 )]
+

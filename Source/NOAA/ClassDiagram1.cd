@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="DACarter.Collections.CollectionWithEvents">
+    <Position X="0.5" Y="18.75" Width="2" />
+    <NestedTypes>
+      <Delegate Name="DACarter.Collections.CollectionWithEvents.CollectionClear" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CollectionWithEvents.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="DACarter.Collections.CollectionWithEvents.CollectionChange" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CollectionWithEvents.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAAAQIAGgQAAEgAAAAAAAAAgAAAAAAAAAEAAA=</HashCode>
+      <FileName>CollectionWithEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DACarter.NOAA.ComDataBlockCollection">
+    <Position X="0.5" Y="22.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAEAAAAAAAAAACAAABAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>ComDataBlockCollection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="this[System.Int32]" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DACarter.NOAA.DacCnsFile">
+    <Position X="7.25" Y="9.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CEAAAAAAAAAAAAAEAgAAAERAACiAEAAAQgACugAAAAA=</HashCode>
+      <FileName>DacCnsFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DACarter.NOAA.ComDataX">
+    <Position X="12.75" Y="18.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="DACarter.NOAA.ComDataX.ComDataType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DacComData.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="DACarter.NOAA.ComDataX.HdrId" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DacComData.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAAEAACEAQAAIAAAAAAIAUAgAkCEBAACAAAAAgwAKBQ=</HashCode>
+      <FileName>DacComData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DACarter.NOAA.ComDataBlockModeSet" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="19.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="DACarter.NOAA.ComDataBlockModeSet.ModeAccess" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DacComData.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="DACarter.NOAA.ComDataBlockModeSet.MyCollectionEnumerator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DacComData.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAIAgAAAAIAAABAACAAAAAQBAAAiAAAAAAAAAAwAEAA=</HashCode>
+      <FileName>DacComData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="this[System.Int32]" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DACarter.NOAA.ComDataBlockMode" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="19.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="DACarter.NOAA.ComDataBlockMode.BeamAccess">
+        <TypeIdentifier>
+          <NewMemberFileName>DacComData.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="DACarter.NOAA.ComDataBlockMode.MyCollectionEnumerator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DacComData.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAYAgAEkEABAABAACAEAAAQAQACCQEJAAQAAAAwAEAA=</HashCode>
+      <FileName>DacComData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="this[System.Int32]" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DACarter.NOAA.ComDataBlock">
+    <Position X="4" Y="19.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CQYIkgAAEQAAAACCAAFAAAAAAECCCAIAAAAAIQwAGEA=</HashCode>
+      <FileName>DacComData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DACarter.NOAA.DacComFile">
+    <Position X="4.5" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAEAAAAgAEAAAQAAAEAAAAAA=</HashCode>
+      <FileName>DacComFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DACarter.NOAA.DacData">
+    <Position X="16.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAgAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>DacData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DACarter.NOAA.DacDataFileBase">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="DACarter.NOAA.DacDataFileBase.OpenFileType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DacDataFileBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="DACarter.NOAA.DacDataFileBase.WriteFileMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DacDataFileBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="DACarter.NOAA.DacDataFileBase.CompareByDate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DacDataFileBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>OwEcgECGDsJABWWyDgAAAWBAoCiMFAEEakAAEQBIEAI=</HashCode>
+      <FileName>DacDataFileBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DACarter.NOAA.DacFileName" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BwAIMQAAAABiAASAEQAEAAEARKBAAAAAAAAABgAgFAA=</HashCode>
+      <FileName>DacFileName.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DACarter.NOAA.DacPdtFile">
+    <Position X="4.25" Y="9.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>iwCAAAQkAAQAAEkkAIECAGQIAAgIEAAAQAAEEAAAAAA=</HashCode>
+      <FileName>DacPdtFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DACarter.NOAA.DacPopFile">
+    <Position X="4.5" Y="4.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="DACarter.NOAA.DacPopFile.PFData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DacPopFile.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="DACarter.NOAA.DacPopFile.PFNameType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DacPopFile.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAACAAAAAQAAAAAAAACACMABAAiAEACAVQACEACABAI=</HashCode>
+      <FileName>DacPopFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DACarter.NOAA.DacStreamReader" Collapsed="true">
+    <Position X="25.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABEDQACACAEIAAAACAAAQAggSAAAsEQCAoGAAKAAQA=</HashCode>
+      <FileName>DacStreamReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DACarter.NOAA.PdtData">
+    <Position X="20.25" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAAAAIAABAAAAAAFAIAAAAIABAIACACAAgBIABA=</HashCode>
+      <FileName>PdtData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DACarter.NOAA.PopData">
+    <Position X="15" Y="2.75" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="DACarter.NOAA.PopData.PopDataType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PopData.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAAFAAAEIQAAIAAACAAMAMCgAkCEAAQCAAAABApIKAU=</HashCode>
+      <FileName>PopData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Hdr" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DACarter.NOAA.WindsData">
+    <Position X="17.75" Y="2.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="DACarter.NOAA.WindsData.WindsDataType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WindsData.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAgIAgABIAAAgAASAYCAExAEAAAEACAAAjQhBAAAQ=</HashCode>
+      <FileName>WindsData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DACarter.NOAA.WindsFileBase">
+    <Position X="7.5" Y="6" Width="1.75" />
+    <InheritanceLine Type="DACarter.NOAA.DacDataFileBase" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="1.125" />
+        <Point X="8.312" Y="1.125" />
+        <Point X="8.312" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAACAAACAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>WindsFileBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DACarter.NOAA.DacDomsatFile">
+    <Position X="10" Y="9.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="DACarter.NOAA.WindsFileBase" ManuallyRouted="true">
+      <Path>
+        <Point X="8.375" Y="7.759" />
+        <Point X="8.375" Y="8.896" />
+        <Point X="11" Y="8.896" />
+        <Point X="11" Y="9.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAABAAAEAAQAgAAAAAUAAAEAAAAAA=</HashCode>
+      <FileName>DacDomsatFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="DACarter.NOAA.PopHeader">
+    <Position X="13" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACkAwCEA5EAQgJBGARgLgAEE4mEMAAACogAkCJYACgM=</HashCode>
+      <FileName>PopData.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="DACarter.NOAA.IDacFileName" Collapsed="true">
+    <Position X="23.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAIMQAAAAAgAACAEQAEAAAAQKAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>DacFileName.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DACarter.NOAA.DataFileType">
+    <Position X="27.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAgAAABAsJAQAAiBIASAAChAAABACBAAQgAAEVASEQA=</HashCode>
+      <FileName>DacDataFileBase.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DACarter.NOAA.FileType" Collapsed="true">
+    <Position X="25.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAEAAQCAAgAAAAACAAAEAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>DacFileName.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DACarter.NOAA.ProfilerMode" Collapsed="true">
+    <Position X="23.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAgAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>DacFileName.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DACarter.NOAA.ProfilerFrequency" Collapsed="true">
+    <Position X="23.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAASAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>DacFileName.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DACarter.NOAA.FileTimeSpan" Collapsed="true">
+    <Position X="23.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAJAAAAAAAAAAAAAAAAAAAAAIAQAAAAAEAAAA=</HashCode>
+      <FileName>DacFileName.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DACarter.NOAA.ProfilerName" Collapsed="true">
+    <Position X="25.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAQAgAAIGQAAKAEAAAEgAAAAABBACAAEAcAAIA=</HashCode>
+      <FileName>DacFileName.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

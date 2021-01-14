@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88D42EA5-D89A-405B-8280-A7E546478717}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POPN4</RootNamespace>
+    <AssemblyName>POPN4</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>POPN4.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AD9959EvalBd, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\AD9959EvalBd\bin\Debug\AD9959EvalBd.dll</HintPath>
+    </Reference>
+    <Reference Include="DACarter.ClientServer">
+      <HintPath>..\..\DACarter\DACarter.ClientServer\bin\Debug\DACarter.ClientServer.dll</HintPath>
+    </Reference>
+    <Reference Include="DACarter.PopUtilities">
+      <HintPath>..\..\DACarter\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="DACarter.Utilities">
+      <HintPath>..\..\DACarter\Utilities\bin\Debug\DACarter.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="DACarter.Utilities.Graphics">
+      <HintPath>..\..\DACarter\Utilities.Graphics\bin\Debug\DACarter.Utilities.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="DAQDevice, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\DAQDevice\bin\Debug\DAQDevice.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Controls.ProgressBar">
+      <HintPath>..\..\ProgressBar3\Source\Control\bin\debug\Framework.Controls.ProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="ippdefs_cs, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\IppDlls\Ippdefs\bin\Debug\ippdefs_cs.dll</HintPath>
+    </Reference>
+    <Reference Include="POPCommServer">
+      <HintPath>..\POPCommServer\bin\Debug\POPCommServer.dll</HintPath>
+    </Reference>
+    <Reference Include="POPN4Service">
+      <HintPath>..\POPN4Service\bin\Debug\POPN4Service.exe</HintPath>
+    </Reference>
+    <Reference Include="PulseGenDevice, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\PulseGenDevice\bin\Debug\PulseGenDevice.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZGraphDac">
+      <HintPath>..\..\ZGraphDac\bin\Debug\ZGraphDac.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="POPN4MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POPN4MainForm.Designer.cs">
+      <DependentUpon>POPN4MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopNSetup3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopNSetup3.designer.cs">
+      <DependentUpon>PopNSetup3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerMeterDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerMeterDisplay.Designer.cs">
+      <DependentUpon>PowerMeterDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SequenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SequenceForm.Designer.cs">
+      <DependentUpon>SequenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="POPN4MainForm.resx">
+      <DependentUpon>POPN4MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopNSetup3.resx">
+      <DependentUpon>PopNSetup3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveChangesBox.resx">
+      <DependentUpon>SaveChangesBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SequenceForm.resx">
+      <DependentUpon>SequenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SaveChangesBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveChangesBox.designer.cs">
+      <DependentUpon>SaveChangesBox.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="POPN4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,71 @@
+<Configuration>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@System.IntPtr">
+      <Item value="Zero" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.ASCIIEncoding">
+      <Item value="ASCII" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="IsLeapYear" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.WaitHandle">
+      <Item value="WaitOne" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="GetDirectoryName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text">
+      <Item value="ASCIIEncoding" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DACarter.Utilities.CommPort">
+      <Item value="Read" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Directory">
+      <Item value="Exists" priority="0" />
+      <Item value="CreateDirectory" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Match">
+      <Item value="Groups" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:string">
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean />
+  </SettingsComponent>
+  <RecentFilesTracker>
+    <RecentFilesTracker>
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\TextFile.cs" offset="824" line="11" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\IniReader.cs" offset="13909" line="156" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\WebClientDac.cs" offset="1074" line="19" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\MruManager.cs" offset="44" line="0" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\CommPortThread2.cs" offset="3732" line="106" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\CommPort.cs" offset="5222" line="251" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\DacSerializer.cs" offset="4102" line="0" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\CommPortThread.cs" offset="0" line="108" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\DacSoundPlayer.cs" offset="69" line="0" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\ArchiverCommon.cs" offset="0" line="0" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\ArchiverConfiguration.cs" offset="0" line="327" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\ArchiverConfigReader.cs" offset="0" line="-1" column="-1" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\AsyncOp.cs" offset="0" line="24" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\DacDiskCheck.cs" offset="0" line="18" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\DacSpeech.cs" offset="0" line="-1" column="-1" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\Utilities.cs" offset="263" line="0" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\SingletonApp.cs" offset="5934" line="179" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\Copier.cs" offset="787" line="5" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\GpsParser.cs" offset="4222" line="271" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\CommPortReaderForm.cs" offset="13163" line="393" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\Utilities\DacDateTime.cs" offset="1350" line="9" column="0" />
+    </RecentFilesTracker>
+  </RecentFilesTracker>
+</Configuration>

@@ -1,0 +1,206 @@
+<Configuration>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:DACarter.NOAA.PopAsComFile.PopParStruct">
+      <Item value="radar" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Stream">
+      <Item value="Length" priority="0" />
+      <Item value="Seek" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:string[]">
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime.Now">
+      <Item value="Year" priority="2" />
+      <Item value="Subtract" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DACarter.NOAA.DacDataFileBase.ParsedFileNameStruct">
+      <Item value="TimeStamp" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DACarter.NOAA.PopData">
+      <Item value="Spectra" priority="0" />
+      <Item value="StationLabel" priority="0" />
+      <Item value="Hdr" priority="7" />
+      <Item value="NHts" priority="0" />
+      <Item value="NPts" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:string">
+      <Item value="EndsWith" priority="0" />
+      <Item value="Trim" priority="1" />
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DACarter.NOAA.PopHeader">
+      <Item value="SysDelay" priority="0" />
+      <Item value="NPts" priority="3" />
+      <Item value="NHts" priority="1" />
+      <Item value="Spacing" priority="2" />
+      <Item value="NCode" priority="4" />
+      <Item value="StationName" priority="3" />
+      <Item value="IPP" priority="0" />
+      <Item value="PW" priority="4" />
+      <Item value="NSets" priority="5" />
+      <Item value="TxFreq" priority="0" />
+      <Item value="TimeStamp" priority="2" />
+      <Item value="NCI" priority="0" />
+      <Item value="Azimuth" priority="1" />
+      <Item value="Delay" priority="2" />
+      <Item value="RassIsOn" priority="2" />
+      <Item value="NRx" priority="3" />
+      <Item value="RadarID" priority="5" />
+      <Item value="Altitude" priority="0" />
+      <Item value="NSpec" priority="0" />
+      <Item value="Elevation" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DACarter.NOAA.DataFileType">
+      <Item value="CnsDayFile" priority="2" />
+      <Item value="DigitalThermometerFile" priority="0" />
+      <Item value="TogaFile" priority="1" />
+      <Item value="PdtFile" priority="2" />
+      <Item value="CeilometerFile" priority="0" />
+      <Item value="UnknownFile" priority="0" />
+      <Item value="DomsatMultipleMsgFile" priority="1" />
+      <Item value="PopDayFile" priority="1" />
+      <Item value="ComCFile" priority="2" />
+      <Item value="EtlCnsHourFile" priority="2" />
+      <Item value="ComLoopFile" priority="2" />
+      <Item value="LapxmPopHourFile" priority="1" />
+      <Item value="DomsatSingleMsgFile" priority="2" />
+      <Item value="LapxmPopDayFile" priority="1" />
+      <Item value="DisdrometerFile" priority="0" />
+      <Item value="CampbellCr10File" priority="0" />
+      <Item value="AsciiMomentsFile" priority="0" />
+      <Item value="PopHourFile" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Array">
+      <Item value="Sort" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text">
+      <Item value="RegularExpressions" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DACarter.NOAA.PopAsComFile.HeaderStruct">
+      <Item value="poppar" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ArrayList">
+      <Item value="Clear" priority="3" />
+      <Item value="Add" priority="1" />
+      <Item value="Count" priority="13" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="10" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="Length" priority="0" />
+      <Item value="ToString" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DACarter.Utilities.DacDateTime">
+      <Item value="FromDayOfYear" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="Year" priority="0" />
+      <Item value="Minute" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="GetDirectoryName" priority="0" />
+      <Item value="GetFileName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamReader">
+      <Item value="Close" priority="0" />
+      <Item value="BaseStream" priority="0" />
+      <Item value="DiscardBufferedData" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DACarter.NOAA.DacStreamReader">
+      <Item value="ReadLine" priority="0" />
+      <Item value="LineLength" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:int">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DACarter.NOAA.PopAsComFile.ProcParStruct">
+      <Item value="Dop3" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DACarter.NOAA.DacDataFileBase.TimeStampFromName">
+      <Item value="Site" priority="0" />
+      <Item value="Year" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="2" />
+      <Item value="MinValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DACarter.NOAA.PopAsComFile.RadarIDStruct">
+      <Item value="proc" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DACarter">
+      <Item value="Utilities" priority="0" />
+      <Item value="NOAA" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.BinaryReader">
+      <Item value="Close" priority="1" />
+      <Item value="BaseStream" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.GroupCollection">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DACarter.NOAA.DacData">
+      <Item value="Notes" priority="4" />
+      <Item value="TimeStamp" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@">
+      <Item value="Groups" priority="6" />
+      <Item value="CopyTo" priority="0" />
+      <Item value="Days" priority="0" />
+      <Item value="Count" priority="0" />
+      <Item value="Match" priority="1" />
+      <Item value="IsMatch" priority="0" />
+      <Item value="DayOfYear" priority="0" />
+      <Item value="Trim" priority="0" />
+      <Item value="Success" priority="0" />
+      <Item value="Add" priority="0" />
+      <Item value="Name" priority="1" />
+      <Item value="GetFiles" priority="0" />
+      <Item value="FullName" priority="0" />
+      <Item value="Length" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DACarter.NOAA.DacDataFileBase.ParsedFileName">
+      <Item value="TimeStamp" priority="1" />
+      <Item value="Site" priority="1" />
+      <Item value="EndTimeStamp" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileStream">
+      <Item value="Close" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean />
+  </SettingsComponent>
+  <RecentFilesTracker>
+    <RecentFilesTracker>
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\DacDomsatFile.cs" offset="2250" line="51" column="0" />
+      <TrackedFile location="C:\MyProjects7\Win32\GoesRead2\goesread2.cpp" offset="14444" line="553" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\DacDataFileBase.cs" offset="41005" line="378" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\ReadDataFile\ReadComFileWorkerThread.cs" offset="7161" line="259" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\DacDataFile.cs" offset="3649" line="93" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\DacFileName.cs" offset="3047" line="0" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\Plot3d.cs" offset="0" line="-1" column="-1" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\ProfilePlot.cs" offset="155" line="0" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\Archiver2\Archiver.cs" offset="25541" line="728" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\DacCnsFile.cs" offset="0" line="109" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\DacPopFile.cs" offset="0" line="34" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\PdtData.cs" offset="0" line="42" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\DacPdtFile.cs" offset="0" line="58" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\DacComFile.cs" offset="0" line="57" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\DacComData.cs" offset="0" line="0" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\DacData.cs" offset="0" line="0" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\FileReadTest\Class1.cs" offset="0" line="3" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\PopData.cs" offset="0" line="33" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\StackedPlot.cs" offset="0" line="36" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\WindsData.cs" offset="242" line="-1" column="-1" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\DacStreamReader.cs" offset="113" line="0" column="0" />
+      <TrackedFile location="C:\MyProjects7\dotNET2003\DACarter\NOAA\CollectionWithEvents.cs" offset="156" line="0" column="0" />
+    </RecentFilesTracker>
+  </RecentFilesTracker>
+</Configuration>

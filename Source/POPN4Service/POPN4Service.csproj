@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42BD505D-FA91-45CC-B860-BA2BB7BCFD69}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POPN4Service</RootNamespace>
+    <AssemblyName>POPN4Service</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AD9959EvalBdUsbK">
+      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\AD9959EvalBdUsbK\bin\Debug\AD9959EvalBdUsbK.dll</HintPath>
+    </Reference>
+    <Reference Include="DACarter.ClientServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DACarter\DACarter.ClientServer\bin\Debug\DACarter.ClientServer.dll</HintPath>
+    </Reference>
+    <Reference Include="DACarter.NOAA">
+      <HintPath>..\..\DACarter\NOAA\bin\Debug\DACarter.NOAA.dll</HintPath>
+    </Reference>
+    <Reference Include="DACarter.PopUtilities">
+      <HintPath>..\..\DACarter\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="DACarter.Utilities">
+      <HintPath>..\..\DACarter\Utilities\bin\Debug\DACarter.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="DACarter.Utilities.Maths">
+      <HintPath>..\..\DACarter\DACarter.Utilities.Maths\Utilities.Maths\bin\Debug\DACarter.Utilities.Maths.dll</HintPath>
+    </Reference>
+    <Reference Include="DAQDevice">
+      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\DAQDevice\bin\Debug\DAQDevice.dll</HintPath>
+    </Reference>
+    <Reference Include="ippdefs_cs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\IppDlls\Ippdefs\bin\Debug\ippdefs_cs.dll</HintPath>
+    </Reference>
+    <Reference Include="ipps_cs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\IppDlls\ipps\bin\Debug\ipps_cs.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Iridium">
+      <HintPath>..\..\Libs\MathNet.Iridium.dll</HintPath>
+    </Reference>
+    <Reference Include="MCPowermeter">
+      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\MCPowermeter\bin\Debug\MCPowermeter.dll</HintPath>
+    </Reference>
+    <Reference Include="POPCommServer">
+      <HintPath>..\POPCommServer\bin\Debug\POPCommServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PulseGenDevice">
+      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\PulseGenDevice\bin\Debug\PulseGenDevice.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GroundClutter3.cs" />
+    <Compile Include="IntelIPP3.cs" />
+    <Compile Include="LoadDDSFirmware.cs" />
+    <Compile Include="MeltingLayerCalculator.cs" />
+    <Compile Include="PopDataPackage3.cs" />
+    <Compile Include="PopFileWriter3.cs" />
+    <Compile Include="PopNAllocator.cs" />
+    <Compile Include="POPN4Service.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopNConfig.cs" />
+    <Compile Include="PopNConsensus.cs" />
+    <Compile Include="PopNDwellWorker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PopNDwellWorker.DopplerTS.cs">
+      <DependentUpon>PopNDwellWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopNDwellWorker.Plotting.cs">
+      <DependentUpon>PopNDwellWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopNDwellWorker.Spec.cs">
+      <DependentUpon>PopNDwellWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopNReplay3.cs" />
+    <Compile Include="PopSequencer.cs" />
+    <Compile Include="ServiceStarter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="POPN4Service.resx">
+      <DependentUpon>POPN4Service.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
