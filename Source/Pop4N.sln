@@ -62,6 +62,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseboxCard", "PulseboxCard\PulseboxCard.csproj", "{76405A69-A01F-4F60-8653-3DA5F0B9505F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGenDevice", "PulseGenDevice\PulseGenDevice.csproj", "{56D2F689-413D-4C58-A720-E1AD822CBF70}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C10C6749-48E2-496A-9503-5449E2F34CE2} = {C10C6749-48E2-496A-9503-5449E2F34CE2}
+		{4C72C3DD-7D04-4572-BD64-5E82AF9DD974} = {4C72C3DD-7D04-4572-BD64-5E82AF9DD974}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGenFactory", "PulseGenFactory\PulseGenFactory.csproj", "{94D1E942-A756-4A49-BDA3-F8DC26937342}"
 	ProjectSection(ProjectDependencies) = postProject
