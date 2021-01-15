@@ -1,0 +1,1 @@
+210114 - Compiles all 24 projects as a single solution
