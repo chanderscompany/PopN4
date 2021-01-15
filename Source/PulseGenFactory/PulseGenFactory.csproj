@@ -52,7 +52,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DACarter.PopUtilities">
-      <HintPath>..\..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
+      <HintPath>..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
     </Reference>
     <Reference Include="PulseGenDevice">
       <HintPath>..\PulseGenDevice\bin\Debug\PulseGenDevice.dll</HintPath>

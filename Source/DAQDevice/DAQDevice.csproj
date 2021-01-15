@@ -52,19 +52,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DACarter.PopUtilities">
-      <HintPath>..\..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
-    </Reference>
-    <Reference Include="DACarter.Utilities, Version=1.0.4966.23250, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Utilities\bin\Debug\DACarter.Utilities.dll</HintPath>
+      <HintPath>..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
     </Reference>
     <Reference Include="Interop.DAQCOMLib">
-      <HintPath>..\..\..\Libs\Interop.DAQCOMLib.dll</HintPath>
+      <HintPath>..\Libs\Interop.DAQCOMLib.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="MccDaq, Version=2.5.0.0, Culture=neutral, PublicKeyToken=a37eefcf5c6ca10a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Libs\MccDaq.dll</HintPath>
+      <HintPath>..\Libs\MccDaq.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -81,6 +77,12 @@
     <Compile Include="DAQBoardMCCFile.cs" />
     <Compile Include="DAQDevice.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{047ba7b6-8ba0-4e2c-8d77-d833bd050a07}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

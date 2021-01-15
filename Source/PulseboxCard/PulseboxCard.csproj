@@ -54,10 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DACarter.PopUtilities">
-      <HintPath>..\..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
-    </Reference>
-    <Reference Include="DACarter.Utilities">
-      <HintPath>..\..\Utilities\bin\Debug\DACarter.Utilities.dll</HintPath>
+      <HintPath>..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -79,6 +76,10 @@
     <ProjectReference Include="..\PulseGenDevice\PulseGenDevice.csproj">
       <Project>{56D2F689-413D-4C58-A720-E1AD822CBF70}</Project>
       <Name>PulseGenDevice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{047ba7b6-8ba0-4e2c-8d77-d833bd050a07}</Project>
+      <Name>Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

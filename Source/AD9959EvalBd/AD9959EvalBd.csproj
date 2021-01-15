@@ -72,14 +72,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DACarter.PopUtilities">
-      <HintPath>..\..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
-    </Reference>
-    <Reference Include="DACarter.Utilities">
-      <HintPath>..\..\Utilities\bin\Debug\DACarter.Utilities.dll</HintPath>
+      <HintPath>..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
     </Reference>
     <Reference Include="LibUsbDotNet, Version=2.2.5.61, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Libs\LibUsbDotNet.dll</HintPath>
+      <HintPath>..\Libs\LibUsbDotNet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -94,6 +91,12 @@
     <Compile Include="AD9959ConfigFile.cs" />
     <Compile Include="AD9959EvalBd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{047ba7b6-8ba0-4e2c-8d77-d833bd050a07}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -85,25 +85,16 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DACarter.Utilities">
-      <HintPath>..\..\Utilities\bin\Debug\DACarter.Utilities.dll</HintPath>
-    </Reference>
     <Reference Include="DACarter.Utilities.Graphics">
       <HintPath>..\..\Utilities.Graphics\bin\Debug\DACarter.Utilities.Graphics.dll</HintPath>
     </Reference>
-    <Reference Include="ippdefs_cs">
-      <HintPath>..\..\..\POPN4\IppDlls\Ippdefs\bin\Debug\ippdefs_cs.dll</HintPath>
-    </Reference>
-    <Reference Include="ipps_cs">
-      <HintPath>..\..\..\POPN4\IppDlls\ipps\bin\Debug\ipps_cs.dll</HintPath>
-    </Reference>
     <Reference Include="MathNet.Iridium, Version=2008.8.16.470, Culture=neutral, PublicKeyToken=c061a3ec32cc0c6f, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Libs\MathNet.Iridium.dll</HintPath>
+      <HintPath>..\..\Libs\MathNet.Iridium.dll</HintPath>
     </Reference>
     <Reference Include="NumericalMethodsLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Libs\NumericalMethodsLibrary.dll</HintPath>
+      <HintPath>..\..\Libs\NumericalMethodsLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -115,7 +106,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="ZGraphDac, Version=5.1.4.20024, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\ZGraphDac\bin\Debug\ZGraphDac.dll</HintPath>
+      <HintPath>..\..\ZGraphDac\bin\Debug\ZGraphDac.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -182,6 +173,20 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Ippdefs\ippdefs.csproj">
+      <Project>{2a375df3-8404-4c52-bb24-9d51c2502b81}</Project>
+      <Name>ippdefs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ipps\ipps.csproj">
+      <Project>{c1d7ab2f-fba6-4579-9a52-6f1a779eac5f}</Project>
+      <Name>ipps</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utilities\Utilities.csproj">
+      <Project>{047ba7b6-8ba0-4e2c-8d77-d833bd050a07}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

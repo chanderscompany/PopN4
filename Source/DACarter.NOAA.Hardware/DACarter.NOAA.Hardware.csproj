@@ -86,11 +86,7 @@
   <ItemGroup>
     <Reference Include="DACarter.PopUtilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
-    </Reference>
-    <Reference Include="DACarter.Utilities, Version=1.0.3525.19667, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Utilities\bin\Debug\DACarter.Utilities.dll</HintPath>
+      <HintPath>..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
     </Reference>
     <Reference Include="Interop.DAQCOMLib - 32bit, Version=2.401.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
@@ -99,14 +95,14 @@
     </Reference>
     <Reference Include="LibUsbDotNet, Version=2.2.8.104, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Libs\LibUsbDotNet.dll</HintPath>
+      <HintPath>..\Libs\LibUsbDotNet.dll</HintPath>
     </Reference>
     <Reference Include="mcl_pm64, Version=14.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Libs\mcl_pm64.dll</HintPath>
+      <HintPath>..\Libs\mcl_pm64.dll</HintPath>
     </Reference>
     <Reference Include="SpinAPI.NET">
-      <HintPath>..\..\..\SpinAPI.NET\bin\AnyCPU\Debug\SpinAPI.NET.dll</HintPath>
+      <HintPath>..\SpinAPI.NET\bin\AnyCPU\Debug\SpinAPI.NET.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -154,6 +150,12 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{047ba7b6-8ba0-4e2c-8d77-d833bd050a07}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

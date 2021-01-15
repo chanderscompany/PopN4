@@ -57,47 +57,27 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AD9959EvalBdUsbK">
-      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\AD9959EvalBdUsbK\bin\Debug\AD9959EvalBdUsbK.dll</HintPath>
-    </Reference>
     <Reference Include="DACarter.ClientServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DACarter\DACarter.ClientServer\bin\Debug\DACarter.ClientServer.dll</HintPath>
-    </Reference>
-    <Reference Include="DACarter.NOAA">
-      <HintPath>..\..\DACarter\NOAA\bin\Debug\DACarter.NOAA.dll</HintPath>
+      <HintPath>..\DACarter.ClientServer\bin\Debug\DACarter.ClientServer.dll</HintPath>
     </Reference>
     <Reference Include="DACarter.PopUtilities">
-      <HintPath>..\..\DACarter\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
-    </Reference>
-    <Reference Include="DACarter.Utilities">
-      <HintPath>..\..\DACarter\Utilities\bin\Debug\DACarter.Utilities.dll</HintPath>
-    </Reference>
-    <Reference Include="DACarter.Utilities.Maths">
-      <HintPath>..\..\DACarter\DACarter.Utilities.Maths\Utilities.Maths\bin\Debug\DACarter.Utilities.Maths.dll</HintPath>
+      <HintPath>..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
     </Reference>
     <Reference Include="DAQDevice">
-      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\DAQDevice\bin\Debug\DAQDevice.dll</HintPath>
-    </Reference>
-    <Reference Include="ippdefs_cs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\IppDlls\Ippdefs\bin\Debug\ippdefs_cs.dll</HintPath>
-    </Reference>
-    <Reference Include="ipps_cs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\IppDlls\ipps\bin\Debug\ipps_cs.dll</HintPath>
+      <HintPath>..\DAQDevice\bin\Debug\DAQDevice.dll</HintPath>
     </Reference>
     <Reference Include="MathNet.Iridium">
-      <HintPath>..\..\Libs\MathNet.Iridium.dll</HintPath>
+      <HintPath>..\Libs\MathNet.Iridium.dll</HintPath>
     </Reference>
     <Reference Include="MCPowermeter">
-      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\MCPowermeter\bin\Debug\MCPowermeter.dll</HintPath>
+      <HintPath>..\MCPowermeter\bin\Debug\MCPowermeter.dll</HintPath>
     </Reference>
     <Reference Include="POPCommServer">
       <HintPath>..\POPCommServer\bin\Debug\POPCommServer.dll</HintPath>
     </Reference>
     <Reference Include="PulseGenDevice">
-      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\PulseGenDevice\bin\Debug\PulseGenDevice.dll</HintPath>
+      <HintPath>..\PulseGenDevice\bin\Debug\PulseGenDevice.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration.Install" />
@@ -162,6 +142,32 @@
       <DependentUpon>POPN4Service.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AD9959EvalBd\AD9959EvalBd.csproj">
+      <Project>{7cdef638-ec9c-4f14-85b8-f4923698f85e}</Project>
+      <Name>AD9959EvalBd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DACarter.Utilities.Maths\Utilities.Maths\Utilities.Maths.csproj">
+      <Project>{8ae66acc-0064-408a-9732-c40bb869e60a}</Project>
+      <Name>Utilities.Maths</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ippdefs\ippdefs.csproj">
+      <Project>{2a375df3-8404-4c52-bb24-9d51c2502b81}</Project>
+      <Name>ippdefs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ipps\ipps.csproj">
+      <Project>{c1d7ab2f-fba6-4579-9a52-6f1a779eac5f}</Project>
+      <Name>ipps</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NOAA\NOAA.csproj">
+      <Project>{191ee53e-de07-455f-a8a5-666f77575c4b}</Project>
+      <Name>NOAA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{047ba7b6-8ba0-4e2c-8d77-d833bd050a07}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

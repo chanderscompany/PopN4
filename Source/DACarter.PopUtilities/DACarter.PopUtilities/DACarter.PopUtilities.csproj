@@ -87,13 +87,6 @@
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DACarter.Utilities, Version=1.0.3223.22879, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Utilities\bin\Debug\DACarter.Utilities.dll</HintPath>
-    </Reference>
-    <Reference Include="ippdefs_cs">
-      <HintPath>..\..\..\POPN4\IppDlls\Ippdefs\bin\Debug\ippdefs_cs.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -106,6 +99,16 @@
     <Compile Include="PopDataPackage3.cs" />
     <Compile Include="PopParameters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Ippdefs\ippdefs.csproj">
+      <Project>{2a375df3-8404-4c52-bb24-9d51c2502b81}</Project>
+      <Name>ippdefs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utilities\Utilities.csproj">
+      <Project>{047ba7b6-8ba0-4e2c-8d77-d833bd050a07}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -93,7 +93,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="ZGraphDac, Version=5.1.4.20592, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\ZGraphDac\bin\Debug\ZGraphDac.dll</HintPath>
+      <HintPath>..\ZGraphDac\bin\Debug\ZGraphDac.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

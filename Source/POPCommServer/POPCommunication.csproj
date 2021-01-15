@@ -40,14 +40,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DACarter.ClientServer">
-      <HintPath>..\..\DACarter\DACarter.ClientServer\bin\Debug\DACarter.ClientServer.dll</HintPath>
+      <HintPath>..\DACarter.ClientServer\bin\Debug\DACarter.ClientServer.dll</HintPath>
     </Reference>
     <Reference Include="DACarter.PopUtilities">
-      <HintPath>..\..\DACarter\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
-    </Reference>
-    <Reference Include="ippdefs_cs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\IppDlls\Ippdefs\bin\Debug\ippdefs_cs.dll</HintPath>
+      <HintPath>..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -61,6 +57,12 @@
   <ItemGroup>
     <Compile Include="POPCommunication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ippdefs\ippdefs.csproj">
+      <Project>{2a375df3-8404-4c52-bb24-9d51c2502b81}</Project>
+      <Name>ippdefs</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

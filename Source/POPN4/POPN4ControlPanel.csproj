@@ -50,30 +50,17 @@
   <ItemGroup>
     <Reference Include="AD9959EvalBd, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\AD9959EvalBd\bin\Debug\AD9959EvalBd.dll</HintPath>
+      <HintPath>..\AD9959EvalBd\bin\Debug\AD9959EvalBd.dll</HintPath>
     </Reference>
     <Reference Include="DACarter.ClientServer">
-      <HintPath>..\..\DACarter\DACarter.ClientServer\bin\Debug\DACarter.ClientServer.dll</HintPath>
+      <HintPath>..\DACarter.ClientServer\bin\Debug\DACarter.ClientServer.dll</HintPath>
     </Reference>
     <Reference Include="DACarter.PopUtilities">
-      <HintPath>..\..\DACarter\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
-    </Reference>
-    <Reference Include="DACarter.Utilities">
-      <HintPath>..\..\DACarter\Utilities\bin\Debug\DACarter.Utilities.dll</HintPath>
-    </Reference>
-    <Reference Include="DACarter.Utilities.Graphics">
-      <HintPath>..\..\DACarter\Utilities.Graphics\bin\Debug\DACarter.Utilities.Graphics.dll</HintPath>
+      <HintPath>..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
     </Reference>
     <Reference Include="DAQDevice, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\DAQDevice\bin\Debug\DAQDevice.dll</HintPath>
-    </Reference>
-    <Reference Include="Framework.Controls.ProgressBar">
-      <HintPath>..\..\ProgressBar3\Source\Control\bin\debug\Framework.Controls.ProgressBar.dll</HintPath>
-    </Reference>
-    <Reference Include="ippdefs_cs, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\IppDlls\Ippdefs\bin\Debug\ippdefs_cs.dll</HintPath>
+      <HintPath>..\DAQDevice\bin\Debug\DAQDevice.dll</HintPath>
     </Reference>
     <Reference Include="POPCommServer">
       <HintPath>..\POPCommServer\bin\Debug\POPCommServer.dll</HintPath>
@@ -83,7 +70,7 @@
     </Reference>
     <Reference Include="PulseGenDevice, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DACarter\DACarter.NOAA.Hardware\PulseGenDevice\bin\Debug\PulseGenDevice.dll</HintPath>
+      <HintPath>..\PulseGenDevice\bin\Debug\PulseGenDevice.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -93,7 +80,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="ZGraphDac">
-      <HintPath>..\..\ZGraphDac\bin\Debug\ZGraphDac.dll</HintPath>
+      <HintPath>..\ZGraphDac\bin\Debug\ZGraphDac.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +160,24 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ippdefs\ippdefs.csproj">
+      <Project>{2a375df3-8404-4c52-bb24-9d51c2502b81}</Project>
+      <Name>ippdefs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProgressBar3\Source\Control\Xp ProgressBar.csproj">
+      <Project>{98348d7a-6606-4cea-bac9-859d435c5988}</Project>
+      <Name>Xp ProgressBar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities.Graphics\Utilities.Graphics.csproj">
+      <Project>{67699c72-de24-4ae0-935f-2df92ed14274}</Project>
+      <Name>Utilities.Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{047ba7b6-8ba0-4e2c-8d77-d833bd050a07}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
