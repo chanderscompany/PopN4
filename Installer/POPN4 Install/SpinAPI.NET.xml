@@ -1,0 +1,1041 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpinAPI.NET</name>
+    </assembly>
+    <members>
+        <member name="T:SpinCore.SpinAPI.NativeMethods">
+            <summary>
+            SpinAPI Native Methods
+            </summary>
+            
+        </member>
+        <member name="T:SpinCore.SpinAPI.NativeMethods.PB_OVERFLOW_STRUCT">
+            <summary>
+            Overflow structure
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.NativeMethods.PB_OVERFLOW_STRUCT.adc">
+            <summary>
+            Number of overflows that occur when sampling data at the ADC.
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.NativeMethods.PB_OVERFLOW_STRUCT.cic">
+            <summary>
+            Number of overflows that occur after the CIC filter.
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.NativeMethods.PB_OVERFLOW_STRUCT.fir">
+            <summary>
+            Number of overflows that occur after the FIR filter.
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.NativeMethods.PB_OVERFLOW_STRUCT.average">
+            <summary>
+            Number of overflows that occur during the averaging process.
+            </summary>
+        </member>
+        <member name="T:SpinCore.SpinAPI.NativeMethods64">
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            <summary>
+            NativeMethods calls to 64-bit library spinapi64.dll
+            </summary>
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_get_version">
+            <summary>
+            Get the version of this library.
+            </summary>
+            <returns>A string indicating the version of this library is returned.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_count_boards">
+            <summary>
+            Return the number of SpinCore boards present in your system.
+            </summary>
+            <returns>The number of boards present is returned. -1 is returned on error.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_get_error">
+            <summary>
+            Return the most recent error string.
+            </summary>
+            <returns>A string describing the last error is returned.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_init">
+            <summary>
+            Initializes the board.
+            </summary>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_reset">
+            <summary>
+            Stops program execution and returns to the beginning of the program, waiting for a trigger.
+            </summary>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_select_board(System.Int32)">
+            <summary>
+            Select which board to talk to.
+            </summary>
+            <param name="board_num">Specifies which board to select.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_get_firmware_id">
+            <summary>
+            Get the firmware version on the board.
+            </summary>
+            <returns>Returns the firmware id.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_close">
+            <summary>
+            End communication with the board.
+            </summary>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_core_clock(System.Double)">
+            <summary>
+            Tell the library what clock frequency the board uses.
+            </summary>
+            <param name="clockFrequency">Frequency of the clock in MHz.</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_start_programming(System.Int32)">
+            <summary>
+            This function tells the board to start programming one of the onboard devices.
+            </summary>
+            <param name="device">Specifies which device to start programming.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_stop_programming">
+            <summary>
+            Finishes the programming for a specific onboard devices which was started by pb_start_programming.
+            </summary>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_start">
+            <summary>
+            Send a software trigger to the board.
+            </summary>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_read_status">
+            <summary>
+            Read status from the board.
+            </summary>
+            <returns>Word that indicates the state of the current board.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_stop">
+            <summary>
+            Stops output of board.
+            </summary>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_inst_pbonly(System.Int32,System.Int32,System.Int32,System.Double)">
+            <summary>
+            This is the instruction programming function for boards without a DDS.
+            </summary>
+            <param name="flags">Set every bit to one for each flag you want to set high.</param>
+            <param name="inst">Specify the instruction you want.</param>
+            <param name="inst_data">Instruction specific data.</param>
+            <param name="length">Length of this instruction in nanoseconds.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_set_defaults">
+            <summary>
+            This function sets the RadioProcessor to its default state.
+            </summary>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_overflow(System.Int32,SpinCore.SpinAPI.NativeMethods.PB_OVERFLOW_STRUCT)">
+            <summary>
+            Retrieve the contents of the overflow registers.
+            </summary>
+            <param name="reset">Set this to one to reset the overflow counters.</param>
+            <param name="of">Pointer to a PB_OVERFLOW_STRUCT which will hold the values of the overflow counter.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_scan_count(System.Int32)">
+            <summary>
+            Get the current value of the scan count register.
+            </summary>
+            <param name="reset">If this parameter is set to 1, this function will reset the scan counter to 0.</param>
+            <returns>The number of scans performed. A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_get_data(System.Int32,System.Int32[],System.Int32[])">
+            <summary>
+            Retrieve the captured data from the board's memory.
+            </summary>
+            <param name="num_points">Number of complex points to read from RAM.</param>
+            <param name="real_data">Real data from RAM is stored into this array.</param>
+            <param name="imag_data">Imag data from RAM is stored into this array.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_dds_load(System.Single[],System.Int32)">
+            <summary>
+            Load the DDS with the given waveform.
+            </summary>
+            <param name="data">An array of 1024 floats that represent a single period of the waveform you want to have loaded.</param>
+            <param name="device">Device you wish to program the waveform to.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_set_amp(System.Single,System.Int32)">
+            <summary>
+            Set the value of one of the amplitude registers.
+            </summary>
+            <param name="amp">Amplitude value. 0.0 - 1.0</param>
+            <param name="addr">Address of register to write to.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_setup_filters(System.Double,System.Int32,System.Int32)">
+            <summary>
+            Program the onboard filters to capture data and reduce it to a baseband signal with the given spectral width.
+            </summary>
+            <param name="spectral_width">Desired spectral width (in MHz) of the stored baseband data.</param>
+            <param name="scan_repetitions">Number of scans intended to be performed.</param>
+            <param name="cmd">This paramater provides additional options for this function.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_set_num_points(System.Int32)">
+            <summary>
+            Set the number of complex points to capture.
+            </summary>
+            <param name="num_points">The number of complex points to capture.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_set_freq(System.Double)">
+            <summary>
+            Write the given frequency to a frequency register on a DDS enabled board.
+            </summary>
+            <param name="freq">The frequency in MHz to be programmed to the register.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_set_phase(System.Double)">
+            <summary>
+            Write the given phase to a phase register on DDS enabled boards.
+            </summary>
+            <param name="phase">The phase in degrees to be programmed to the register.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_inst_radio(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Double)">
+            <summary>
+            Program an instruction of the pulse program.
+            </summary>
+            <param name="freq">Selects which frequency register to use.</param>
+            <param name="cos_phase">Selects which phase register to use for the cos (real) channel.</param>
+            <param name="sin_phase">Selects which phase register to use for the sin (imaginary) channel.</param>
+            <param name="tx_phase">Selects which phase register to use for the TX channel.</param>
+            <param name="tx_enable">When this is 1, the TX channel will be output on the Analog Out connector. When this is 0, Analog Out channel will be turned off.</param>
+            <param name="phase_reset">When this is 1, the phase of all DDS channels will be reset to their time=0 phase. They will stay in this state until the value of this bit returns to 0.</param>
+            <param name="trigger_scan">When this is 1, a scan will be triggered. To start a second scan, this bit must be set to 0 and then back to 1.</param>
+            <param name="flags">Controls the state of the user available digital out pins.</param>
+            <param name="inst">Which instruction to use.</param>
+            <param name="inst_data">Some instructions require additional data. This allows that data to be specified.</param>
+            <param name="length">Time until the next instruction is executed in nanoseconds.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_inst_radio_shape(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Double)">
+            <summary>
+            Write an instruction that makes use of the pulse shape feature of some RadioProcessor boards.
+            </summary>
+            <param name="freq">Selects which frequency register to use.</param>
+            <param name="cos_phase">Selects which phase register to use for the cos (real) channel.</param>
+            <param name="sin_phase">Selects which phase register to use for the sin (imaginary) channel.</param>
+            <param name="tx_phase">Selects which phase register to use for the TX channel.</param>
+            <param name="tx_enable">When this is 1, the TX channel will be output on the Analog Out connector. When this is 0, Analog Out channel will be turned off.</param>
+            <param name="phase_reset">When this is 1, the phase of all DDS channels will be reset to their time=0 phase. They will stay in this state until the value of this bit returns to 0.</param>
+            <param name="trigger_scan">When this is 1, a scan will be triggered. To start a second scan, this bit must be set to 0 and then back to 1.</param>
+            <param name="use_shape">Select whether or not to use shaped pulses.</param>
+            <param name="amp">Select which amplitude register to use.</param>
+            <param name="flags">Controls the state of the user available digital out pins.</param>
+            <param name="inst">Which instruction to use.</param>
+            <param name="inst_data">Some instructions require additional data. This allows that data to be specified.</param>
+            <param name="length">Time until the next instruction is executed in nanoseconds.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_inst_radio_shape_cyclops(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Double)">
+            <summary>
+            Write an instruction that makes use of the pulse shape feature of some RadioProcessor boards.
+            </summary>
+            <param name="freq">Selects which frequency register to use.</param>
+            <param name="cos_phase">Selects which phase register to use for the cos (real) channel.</param>
+            <param name="sin_phase">Selects which phase register to use for the sin (imaginary) channel.</param>
+            <param name="tx_phase">Selects which phase register to use for the TX channel.</param>
+            <param name="tx_enable">When this is 1, the TX channel will be output on the Analog Out connector. When this is 0, Analog Out channel will be turned off.</param>
+            <param name="phase_reset">When this is 1, the phase of all DDS channels will be reset to their time=0 phase. They will stay in this state until the value of this bit returns to 0.</param>
+            <param name="trigger_scan">When this is 1, a scan will be triggered. To start a second scan, this bit must be set to 0 and then back to 1.</param>
+            <param name="use_shape">Select whether or not to use shaped pulses.</param>
+            <param name="amp">Select which amplitude register to use.</param>
+            <param name="real_add_sub"></param>
+            <param name="imag_add_sub"></param>
+            <param name="channel_swap"></param>
+            <param name="flags">Controls the state of the user available digital out pins.</param>
+            <param name="inst">Which instruction to use.</param>
+            <param name="inst_data">Some instructions require additional data. This allows that data to be specified.</param>
+            <param name="length">Time until the next instruction is executed in nanoseconds.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods64.pb_fft(System.Int32,System.Int32[],System.Int32[],System.Double[],System.Double[],System.Double[])">
+            <summary>
+            Calculates the Fourier transform of a given set of real and imaginary points.
+            </summary>
+            <param name="numberPoints">Number of points for FFT (must be a power of 2).</param>
+            <param name="real_in">Array of real points for FFT calculation.</param>
+            <param name="imag_in">Array of imaginary points for FFT calculation.</param>
+            <param name="real_out">Real part of FFT output.</param>
+            <param name="imag_out">Imaginary part of FFT output.</param>
+            <param name="mag_fft">Magnitude of the FFT output.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="T:SpinCore.SpinAPI.NativeMethods32">
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            <summary>
+            NativeMethods calls to 32-bit library spinapi.dll
+            </summary>
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_get_version">
+            <summary>
+            Get the version of this library.
+            </summary>
+            <returns>A string indicating the version of this library is returned.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_count_boards">
+            <summary>
+            Return the number of SpinCore boards present in your system.
+            </summary>
+            <returns>The number of boards present is returned. -1 is returned on error.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_get_error">
+            <summary>
+            Return the most recent error string.
+            </summary>
+            <returns>A string describing the last error is returned.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_init">
+            <summary>
+            Initializes the board.
+            </summary>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_reset">
+            <summary>
+            Stops program execution and returns to the beginning of the program, waiting for a trigger.
+            </summary>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_select_board(System.Int32)">
+            <summary>
+            Select which board to talk to.
+            </summary>
+            <param name="board_num">Specifies which board to select.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_get_firmware_id">
+            <summary>
+            Get the firmware version on the board.
+            </summary>
+            <returns>Returns the firmware id.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_close">
+            <summary>
+            End communication with the board.
+            </summary>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_core_clock(System.Double)">
+            <summary>
+            Tell the library what clock frequency the board uses.
+            </summary>
+            <param name="clockFrequency">Frequency of the clock in MHz.</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_start_programming(System.Int32)">
+            <summary>
+            This function tells the board to start programming one of the onboard devices.
+            </summary>
+            <param name="device">Specifies which device to start programming.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_stop_programming">
+            <summary>
+            Finishes the programming for a specific onboard devices which was started by pb_start_programming.
+            </summary>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_start">
+            <summary>
+            Send a software trigger to the board.
+            </summary>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_read_status">
+            <summary>
+            Read status from the board.
+            </summary>
+            <returns>Word that indicates the state of the current board.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_stop">
+            <summary>
+            Stops output of board.
+            </summary>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_inst_pbonly(System.Int32,System.Int32,System.Int32,System.Double)">
+            <summary>
+            This is the instruction programming function for boards without a DDS.
+            </summary>
+            <param name="flags">Set every bit to one for each flag you want to set high.</param>
+            <param name="inst">Specify the instruction you want.</param>
+            <param name="inst_data">Instruction specific data.</param>
+            <param name="length">Length of this instruction in nanoseconds.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_set_defaults">
+            <summary>
+            This function sets the RadioProcessor to its default state.
+            </summary>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_overflow(System.Int32,SpinCore.SpinAPI.NativeMethods.PB_OVERFLOW_STRUCT)">
+            <summary>
+            Retrieve the contents of the overflow registers.
+            </summary>
+            <param name="reset">Set this to one to reset the overflow counters.</param>
+            <param name="of">Pointer to a PB_OVERFLOW_STRUCT which will hold the values of the overflow counter.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_scan_count(System.Int32)">
+            <summary>
+            Get the current value of the scan count register.
+            </summary>
+            <param name="reset">If this parameter is set to 1, this function will reset the scan counter to 0.</param>
+            <returns>The number of scans performed. A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_get_data(System.Int32,System.Int32[],System.Int32[])">
+            <summary>
+            Retrieve the captured data from the board's memory.
+            </summary>
+            <param name="num_points">Number of complex points to read from RAM.</param>
+            <param name="real_data">Real data from RAM is stored into this array.</param>
+            <param name="imag_data">Imag data from RAM is stored into this array.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_dds_load(System.Single[],System.Int32)">
+            <summary>
+            Load the DDS with the given waveform.
+            </summary>
+            <param name="data">An array of 1024 floats that represent a single period of the waveform you want to have loaded.</param>
+            <param name="device">Device you wish to program the waveform to.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_set_amp(System.Single,System.Int32)">
+            <summary>
+            Set the value of one of the amplitude registers.
+            </summary>
+            <param name="amp">Amplitude value. 0.0 - 1.0</param>
+            <param name="addr">Address of register to write to.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_setup_filters(System.Double,System.Int32,System.Int32)">
+            <summary>
+            Program the onboard filters to capture data and reduce it to a baseband signal with the given spectral width.
+            </summary>
+            <param name="spectral_width">Desired spectral width (in MHz) of the stored baseband data.</param>
+            <param name="scan_repetitions">Number of scans intended to be performed.</param>
+            <param name="cmd">This paramater provides additional options for this function.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_set_num_points(System.Int32)">
+            <summary>
+            Set the number of complex points to capture.
+            </summary>
+            <param name="num_points">The number of complex points to capture.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_set_freq(System.Double)">
+            <summary>
+            Write the given frequency to a frequency register on a DDS enabled board.
+            </summary>
+            <param name="freq">The frequency in MHz to be programmed to the register.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_set_phase(System.Double)">
+            <summary>
+            Write the given phase to a phase register on DDS enabled boards.
+            </summary>
+            <param name="phase">The phase in degrees to be programmed to the register.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_inst_radio(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Double)">
+            <summary>
+            Program an instruction of the pulse program.
+            </summary>
+            <param name="freq">Selects which frequency register to use.</param>
+            <param name="cos_phase">Selects which phase register to use for the cos (real) channel.</param>
+            <param name="sin_phase">Selects which phase register to use for the sin (imaginary) channel.</param>
+            <param name="tx_phase">Selects which phase register to use for the TX channel.</param>
+            <param name="tx_enable">When this is 1, the TX channel will be output on the Analog Out connector. When this is 0, Analog Out channel will be turned off.</param>
+            <param name="phase_reset">When this is 1, the phase of all DDS channels will be reset to their time=0 phase. They will stay in this state until the value of this bit returns to 0.</param>
+            <param name="trigger_scan">When this is 1, a scan will be triggered. To start a second scan, this bit must be set to 0 and then back to 1.</param>
+            <param name="flags">Controls the state of the user available digital out pins.</param>
+            <param name="inst">Which instruction to use.</param>
+            <param name="inst_data">Some instructions require additional data. This allows that data to be specified.</param>
+            <param name="length">Time until the next instruction is executed in nanoseconds.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_inst_radio_shape(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Double)">
+            <summary>
+            Write an instruction that makes use of the pulse shape feature of some RadioProcessor boards.
+            </summary>
+            <param name="freq">Selects which frequency register to use.</param>
+            <param name="cos_phase">Selects which phase register to use for the cos (real) channel.</param>
+            <param name="sin_phase">Selects which phase register to use for the sin (imaginary) channel.</param>
+            <param name="tx_phase">Selects which phase register to use for the TX channel.</param>
+            <param name="tx_enable">When this is 1, the TX channel will be output on the Analog Out connector. When this is 0, Analog Out channel will be turned off.</param>
+            <param name="phase_reset">When this is 1, the phase of all DDS channels will be reset to their time=0 phase. They will stay in this state until the value of this bit returns to 0.</param>
+            <param name="trigger_scan">When this is 1, a scan will be triggered. To start a second scan, this bit must be set to 0 and then back to 1.</param>
+            <param name="use_shape">Select whether or not to use shaped pulses.</param>
+            <param name="amp">Select which amplitude register to use.</param>
+            <param name="flags">Controls the state of the user available digital out pins.</param>
+            <param name="inst">Which instruction to use.</param>
+            <param name="inst_data">Some instructions require additional data. This allows that data to be specified.</param>
+            <param name="length">Time until the next instruction is executed in nanoseconds.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_inst_radio_shape_cyclops(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Double)">
+            <summary>
+            Write an instruction that makes use of the pulse shape feature of some RadioProcessor boards.
+            </summary>
+            <param name="freq">Selects which frequency register to use.</param>
+            <param name="cos_phase">Selects which phase register to use for the cos (real) channel.</param>
+            <param name="sin_phase">Selects which phase register to use for the sin (imaginary) channel.</param>
+            <param name="tx_phase">Selects which phase register to use for the TX channel.</param>
+            <param name="tx_enable">When this is 1, the TX channel will be output on the Analog Out connector. When this is 0, Analog Out channel will be turned off.</param>
+            <param name="phase_reset">When this is 1, the phase of all DDS channels will be reset to their time=0 phase. They will stay in this state until the value of this bit returns to 0.</param>
+            <param name="trigger_scan">When this is 1, a scan will be triggered. To start a second scan, this bit must be set to 0 and then back to 1.</param>
+            <param name="use_shape">Select whether or not to use shaped pulses.</param>
+            <param name="amp">Select which amplitude register to use.</param>
+            <param name="real_add_sub"></param>
+            <param name="imag_add_sub"></param>
+            <param name="channel_swap"></param>
+            <param name="flags">Controls the state of the user available digital out pins.</param>
+            <param name="inst">Which instruction to use.</param>
+            <param name="inst_data">Some instructions require additional data. This allows that data to be specified.</param>
+            <param name="length">Time until the next instruction is executed in nanoseconds.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.NativeMethods32.pb_fft(System.Int32,System.Int32[],System.Int32[],System.Double[],System.Double[],System.Double[])">
+            <summary>
+            Calculates the Fourier transform of a given set of real and imaginary points.
+            </summary>
+            <param name="numberPoints">Number of points for FFT (must be a power of 2).</param>
+            <param name="real_in">Array of real points for FFT calculation.</param>
+            <param name="imag_in">Array of imaginary points for FFT calculation.</param>
+            <param name="real_out">Real part of FFT output.</param>
+            <param name="imag_out">Imaginary part of FFT output.</param>
+            <param name="mag_fft">Magnitude of the FFT output.</param>
+            <returns>A negative number is returned on failure.</returns>
+        </member>
+        <member name="T:SpinCore.SpinAPI.SpinAPIException">
+            <summary>
+            Spin API Exception
+            </summary>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPIException.#ctor">
+            <summary>
+            Initializes a new instance of the SpinAPIException class.
+            </summary>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPIException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the SpinAPIException class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPIException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the SpinAPIException class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception.</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPIException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the SpinAPIException class with the serialized data.
+            </summary>
+            <param name="info">The SerializationInfo that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The StreamingContext that contains contextual information about the source or destination.</param>
+        </member>
+        <member name="T:SpinCore.SpinAPI.OpCode">
+            <summary>
+            Instruction or Opcode specify the type of instructions to be performed.
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.OpCode.CONTINUE">
+            <summary>
+            Continue to next instruction
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.OpCode.STOP">
+            <summary>
+            Stop excution
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.OpCode.LOOP">
+            <summary>
+            Beginning of a loop and repeat number of times specified by the instruction data.
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.OpCode.END_LOOP">
+            <summary>
+            End of a loop
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.OpCode.JSR">
+            <summary>
+            Jump to a sub routine
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.OpCode.RTS">
+            <summary>
+            Return from a sub routine
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.OpCode.BRANCH">
+            <summary>
+            Branch
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.OpCode.LONG_DELAY">
+            <summary>
+            Long delay
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.OpCode.WAIT">
+            <summary>
+            Wait for trigger
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.OpCode.RTI">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SpinCore.SpinAPI.ProgramTarget">
+            <summary>
+            Specifies which device to start programming. Valid devices are:
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.ProgramTarget.PULSE_PROGRAM">
+            <summary>
+            The pulse program will be programmed using one of the pb_inst* instructions.
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.ProgramTarget.FREQ_REGS">
+            <summary>
+            The frequency registers will be programmed using the pb_set_freq() function. (DDS and RadioProcessor boards only)
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.ProgramTarget.TX_PHASE_REGS">
+            <summary>
+            The phase registers for the TX channel will be programmed using pb_set_phase() (DDS and RadioProcessor boards only)
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.ProgramTarget.RX_PHASE_REGS">
+            <summary>
+            The phase registers for the RX channel will be programmed using pb_set_phase() (DDS enabled boards only)
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.ProgramTarget.COS_PHASE_REGS">
+            <summary>
+            The phase registers for the cos (real) channel (RadioProcessor boards only)
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.ProgramTarget.SIN_PHASE_REGS">
+            <summary>
+            The phase registers for the sine (imaginary) channel (RadioProcessor boards only)
+            </summary>
+        </member>
+        <member name="T:SpinCore.SpinAPI.TimeUnit">
+            <summary>
+            Timing unit used for specifying delay between instructions.
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.TimeUnit.ns">
+            <summary>
+            nanoseconds
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.TimeUnit.us">
+            <summary>
+            microseconds
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.TimeUnit.ms">
+            <summary>
+            miliseconds
+            </summary>
+        </member>
+        <member name="T:SpinCore.SpinAPI.EStatus_Bit">
+            <summary>
+            Status of the board accessible from the Status property
+            </summary>
+            <remarks>Not all boards support this, see the manual. </remarks>
+        </member>
+        <member name="T:SpinCore.SpinAPI.ControlWord">
+            <summary>
+            RadioProcessor control word defines
+            </summary>
+        </member>
+        <member name="T:SpinCore.SpinAPI.SpinAPI">
+            <summary>
+            The latest version of spinapi can be downloaded form http://www.spincore.com/support
+            For more information about our latest products, please visit our website at: http://www.spincore.com
+            </summary>
+        </member>
+        <member name="F:SpinCore.SpinAPI.SpinAPI.MAXIMUM_NUM_BOARDS">
+            <summary>
+            maximum number of boards that can be supported
+            </summary>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.SelectBoard(System.Int32)">
+            <summary>
+            If multiple boards from SpinCore Technologies are present in your system, this function allows you to select which board to talk to. 
+            Once this function is called, all subsequent commands (such as pb_init(), pb_core_clock(), etc.) will be sent to the selected board. 
+            You may change which board is selected at any time.
+            </summary>
+            <param name="boardNum">Specifies which board to select. Counting starts from 0.</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.Init">
+            <summary>
+            Initializes the board. This must be called before any other functions are used which communicate with the board. 
+            If you have multiple boards installed in your system, pb_select_board() may be called first to select which board to initialize.
+            </summary>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.Reset">
+            <summary>
+            Stops program execution and returns to the beginning of the program, waiting for a trigger.
+            </summary>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.GetFirmwareID(System.Int32)">
+            <summary>
+            Get the firmware version of a specific board.
+            </summary>
+            <param name="boardNum">Board number to query</param>
+            <returns>Returns the boards firmware id</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.StartProgramming(SpinCore.SpinAPI.ProgramTarget)">
+            <summary>
+            This function tells the board to start programming one of the onboard devices. 
+            For all the devices, the method of programming follows the following form:
+            a call to pb_start_programming(), a call to one or more functions which transfer 
+            the actual data, and a call to pb_stop_programming(). 
+            Only one device can be programmed at a time.
+            </summary>
+            <param name="programmingType">Specifies which device to start programming</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.StopProgramming">
+            <summary>
+            Stop programming method must be called before start running any instructions
+            </summary>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.Stop">
+            <summary>
+            Stop running currently programmed instructions. 
+            </summary>
+            <remarks>
+            Note that output bits may maintatin their last state. 
+            </remarks>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.Start">
+            <summary>
+            Send a software trigger to the board. This will start execution of a pulse program. 
+            It will also restart (trigger) a program which is currently paused due to a WAIT instruction. Triggering can also be accomplished through hardware, please see your board's manual for how to accomplish this.
+            </summary>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.SetClock(System.Double)">
+            <summary>
+            Tell the library what clock frequency the board uses. 
+            This should be called at the beginning of each program, right after you initialize the board with pb_init(). 
+            Note that this does not actually set the clock frequency, it simply tells the driver what frequency the board is using, since this cannot (currently) be autodetected.
+            </summary>
+            <param name="clock_freq">clock_freq: Frequency of the clock in MHz.</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.PBInst(System.Int32,SpinCore.SpinAPI.OpCode,System.Int32,System.Double,SpinCore.SpinAPI.TimeUnit)">
+            <summary>
+            This is the instruction programming function for boards without a DDS. 
+            (for example PulseBlaster and PulseBlasterESR boards). 
+            Syntax is identical to that of pb_inst_tworf(), 
+            except that the parameters pertaining to the analog outputs are not used. 
+            </summary>
+            <param name="flags">i/o output flag</param>
+            <param name="inst">Instruction Type</param>
+            <param name="inst_data">Instruction Data</param>
+            <param name="length">Delay length</param>
+            <param name="sec">timing unit (ms, us or ns)</param>
+            <returns> Address of programmed instruction. </returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.PBInstDirect(System.Int32,SpinCore.SpinAPI.OpCode,System.Int32,System.Int32)">
+            <summary>
+            This is the instruction programming function for boards without a DDS. 
+            </summary>
+            <param name="flags">i/o output flag</param>
+            <param name="inst">Instruction Type</param>
+            <param name="inst_data">Instruction Data</param>
+            <param name="length">Delay length</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.SetDefaults">
+            <summary>
+            This function sets the RadioProcessor to its default state. 
+            It has no effect on any other SpinCore product. 
+            This function should generally be called after pb_init() to make sure the RadioProcessor is in a usable state. 
+            It is REQUIRED that this be called at least once after the board is powered on. 
+            <remarks>However, there are a few circumstances when you would not call this function. 
+            In the case where you had one program that configured the RadioProcessor, and another seperate program which simply called pb_start() to start the experiment, 
+            you would NOT call pb_set_defaults() in the second program because this would overwrite the configuration set by the first program.
+            </remarks>
+            </summary>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.Overflow(System.Boolean)">
+            <summary>
+            Retrieve the contents of the overflow registers. 
+            This can be used to find out if the ADC is being driven with to large of a signal. 
+            In addition, the RadioProcessor must round data values at certain points during the processing of the signal. 
+            By default, this rounding is done in such a way that overflows cannot occur. 
+            However, if you change the rounding procedure, this function will allow you to determine if overflows have occurred. 
+            Each overflow register counts the number of overflows up to 65535. 
+            If more overflows than this occur, the register will remain at 65535. 
+            The overflow registers can reset by setting the reset argument of this function to 1. 
+            </summary>
+            <param name="reset">Set to true to reset the overflow counters</param>
+            <returns>Overflow counts if not resetting</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.ScanCount(System.Boolean)">
+            <summary>
+            Get the current value of the scan count register, or reset the register to 0. 
+            This function can be used to monitor the progress of an experiment if multiple scans are being performed.
+            </summary>
+            <param name="reset">If this parameter is set to 1, this function will reset the scan counter to 0. 
+            If reset is 0, this function will return the current value of the scan counter</param>
+            <returns>The number of scans performed since the last reset is returned when reset = false</returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.GetData(System.Int32,System.Int32[],System.Int32[])">
+            <summary>
+            Retrieve the captured data from the board's memory. Data is returned as a signed 32 bit integer. Data can be accessed at any time, even while the data from a scan is being captured. However, this is not recommened since there is no way to tell what data is part of the current scan and what is part of the previous scan.
+            pb_read_status() can be used to determine whether or not a scan is currently in progress.
+            It takes approximately 160ms to transfer all 16k complex points.
+            </summary>
+            <param name="numPoints">Number of complex points to read from RAM</param>
+            <param name="realData">Real data from RAM is stored into this array</param>
+            <param name="imagData">Imag data from RAM is stored into this array</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.GetFFTData(System.Int32,System.Int32[],System.Int32[],System.Double[],System.Double[],System.Double[])">
+            <summary>
+            Calculates the Fourier transform of a given set of real and imaginary points
+            </summary>
+            <param name="numPoints">Number of points for FFT.</param>
+            <param name="realData">Array of real points for FFT calculation</param>
+            <param name="imaginaryData">Array of imaginary points for FFT calculation</param>
+            <param name="realFFT">Real part of FFT output</param>
+            <param name="imaginaryFFT">Imaginary part of FFT output</param>
+            <param name="magnitudeFFT">Magnitude of the FFT output</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.DDSLoad(System.Single[],SpinCore.SpinAPI.Device)">
+            <summary>
+            Load the DDS with the given waveform. There are two different waveforms that can be loaded.
+            <list type="bullet">
+                <item>
+                    <term>DEVICE_DDS</term> 
+                        <description>
+                        This is for the DDS module itself. By default, it is loaded with a sine wave, and if you don't wish to change that or use shaped pulses, you do not need to use this function. Otherwise this waveform can be loaded with any arbitrary waveform that will be used instead of a sine wave.
+                        </description>
+                </item>
+                <item>
+                    <term>DEVICE_SHAPE</term> 
+                        <description>
+                        This waveform is for the shape function. This controls the shape used, if you enable the use_shape parameters of pb_inst_radio_shape(). For example, if you wish to use soft pulses, this could be loaded with the values for the sinc function.
+                        </description>
+                </item>
+            </list>
+            </summary>
+            <param name="data">This should be an array of 1024 floats that represent a single period of the waveform you want to have loaded. The range for each data point is from -1.0 to 1.0</param>
+            <param name="device">Device you wish to program the waveform to. Can be DEVICE_SHAPE or DEVICE_DDS</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.SetAmplitude(System.Single,System.Int32)">
+            <summary>
+            Set the value of one of the amplitude registers.
+            </summary>
+            <param name="amplitude">Amplitude value. 0.0-1.0</param>
+            <param name="address">Address of register to write to</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.SetupFilters(System.Double,System.Int32,SpinCore.SpinAPI.ControlWord)">
+            <summary>
+            Program the onboard filters to capture data and reduce it to a baseband signal with the given spectral width. 
+            This function will automatically set the filter parameters and decimation factors. 
+            For greater control over the filtering process, the filters can be specified manually by using the pb_setup_cic() and pb_setup_fir() functions.
+            </summary>
+            <param name="spectralWidth">Desired spectral width (in MHz) of the stored baseband data. 
+            The decimation factor used is the return value of this function, so that can be checked to determine the exact spectral width used. If the FIR filter is used, this value must be the ADC clock divided by a multiple of 8. 
+            The value will be rounded appropriately if this condition is not met.</param>
+            <param name="scanRepetition">Number of scans intended to be performed. This number is used only for internal rounding purposes. 
+            The actual number of scans performed is determined entirely by how many times the scan_trigger control line is enabled in the pulse program. However, if more scans are performed than specified here, there is a chance that the values stored in RAM will overflow.</param>
+            <param name="cmd">This paramater provides additional options for this function. Multiple options can be sent by ORing them together. If you do not wish to invoke any of the available options, use the number zero for this field. Valid options are:
+            <list>
+                <item >BYPASS_FIR - Incoming data will not pass through the FIR filter. This eliminates the need to decimate by a multiple of 8. This is useful to obtain large spetral widths, or in circumstances where the FIR is deemed unecessary. Please see the RadioProcessor manual for more information about this option.</item>
+                <item >NARROW_BW - Configure the CIC filter so that it will have a narrower bandwidth (the CIC filter will be configured to have three stages rather than the default of one). Please see your board's product manual for more specific information on this feature.</item>
+            </list>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.SetNumberPoints(System.Int32)">
+            <summary>
+            Set the number of complex points to capture. This is typically set to the size of the onboard RAM, but a smaller value can be used if all points are not needed.
+            </summary>
+            <param name="numPoints"> The number of complex points to capture</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.SetFrequency(System.Double)">
+            <summary>
+            Write the given frequency to a frequency register on a DDS enabled board. To do this, first call pb_start_programming(), and pass it FREQ_REGS. 
+            The first call pb_set_freq() will then program frequency register 0, the second call will program frequency register 1, etc. 
+            When you have programmed all the registers you intend to, call pb_stop_programming()
+            </summary>
+            <param name="frequency">The frequency in MHz to be programmed to the register.</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.SetPhase(System.Double)">
+            <summary>
+            Write the given phase to a phase register on DDS enabled boards. 
+            To do this, first call pb_start_programming(), and specify the appropriate bank of phase registers (such as TX_PHASE, RX_PHASE, etc) as the argument. 
+            The first call pb_set_phase() will then program phase register 0, the second call will program phase register 1, etc. 
+            When you have programmed all the registers you intend to, call pb_stop_programming() 
+            The given phase value may be rounded to fit the precision of the board.
+            </summary>
+            <param name="phase">The phase in degrees to be programmed to the register.</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.InstructionRadio(System.Int32,SpinCore.SpinAPI.PhaseRegister,SpinCore.SpinAPI.PhaseRegister,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Int32,SpinCore.SpinAPI.OpCode,System.Int32,System.Double)">
+            <summary>
+            Program an instruction of the pulse program.
+            </summary>
+            <param name="freq">Selects which frequency register to use.</param>
+            <param name="cos_phase">Selects which phase register to use for the cos (real) channel.</param>
+            <param name="sin_phase">Selects which phase register to use for the sin (imaginary) channel.</param>
+            <param name="tx_phase">Selects which phase register to use for the TX channel.</param>
+            <param name="bTX_enable">When this is true, the TX channel will be output on the Analog Out connector. When this is false, Analog Out channel will be turned off.</param>
+            <param name="bPhase_reset">When this is true, the phase of all DDS channels will be reset to their time=0 phase. They will stay in this state until the value of this bit returns to 0.</param>
+            <param name="bTrigger_scan">When this is true, a scan will be triggered. To start a second scan, this bit must be set to false and then back to true.</param>
+            <param name="flags">Controls the state of the user available digital out pins.</param>
+            <param name="inst">Which instruction to use.</param>
+            <param name="inst_data">Some instructions require additional data. This allows that data to be specified.</param>
+            <param name="duration">Time until the next instruction is executed in nanoseconds.</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.InstructionRadioShape(System.Int32,SpinCore.SpinAPI.PhaseRegister,SpinCore.SpinAPI.PhaseRegister,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int32,System.Int32,SpinCore.SpinAPI.OpCode,System.Int32,System.Double)">
+            <summary>
+            Write an instruction that makes use of the pulse shape feature of some RadioProcessor boards.
+            </summary>
+            <param name="freq">Selects which frequency register to use.</param>
+            <param name="cos_phase">Selects which phase register to use for the cos (real) channel.</param>
+            <param name="sin_phase">Selects which phase register to use for the sin (imaginary) channel.</param>
+            <param name="tx_phase">Selects which phase register to use for the TX channel.</param>
+            <param name="bTX_enable">When this is true, the TX channel will be output on the Analog Out connector. When this is false, Analog Out channel will be turned off.</param>
+            <param name="bPhase_reset">When this is true, the phase of all DDS channels will be reset to their time=0 phase. They will stay in this state until the value of this bit returns to 0.</param>
+            <param name="bTrigger_scan">When this is true, a scan will be triggered. To start a second scan, this bit must be set to false and then back to true.</param>
+            <param name="bUse_shape">Select whether or not to use shaped pulses.</param>
+            <param name="amp">Select which amplitude register to use.</param>
+            <param name="flags">Controls the state of the user available digital out pins.</param>
+            <param name="inst">Which instruction to use.</param>
+            <param name="inst_data">Some instructions require additional data. This allows that data to be specified.</param>
+            <param name="duration">Time until the next instruction is executed in nanoseconds.</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.InstructionRadioShapeCyclops(System.Int32,SpinCore.SpinAPI.PhaseRegister,SpinCore.SpinAPI.PhaseRegister,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Int32,SpinCore.SpinAPI.OpCode,System.Int32,System.Double)">
+            <summary>
+            Write an instruction that makes use of the pulse shape feature of some RadioProcessor boards.
+            </summary>
+            <param name="freq">Selects which frequency register to use.</param>
+            <param name="cos_phase">Selects which phase register to use for the cos (real) channel.</param>
+            <param name="sin_phase">Selects which phase register to use for the sin (imaginary) channel.</param>
+            <param name="tx_phase">Selects which phase register to use for the TX channel.</param>
+            <param name="bTX_enable">When this is true, the TX channel will be output on the Analog Out connector. When this is false, Analog Out channel will be turned off.</param>
+            <param name="bPhase_reset">When this is true, the phase of all DDS channels will be reset to their time=0 phase. They will stay in this state until the value of this bit returns to 0.</param>
+            <param name="bTrigger_scan">When this is true, a scan will be triggered. To start a second scan, this bit must be set to false and then back to true.</param>
+            <param name="bUse_shape">Select whether or not to use shaped pulses.</param>
+            <param name="amp">Select which amplitude register to use.</param>
+            <param name="bReal_add_sub"></param>
+            <param name="bImag_add_sub"></param>
+            <param name="bChannel_swap"></param>
+            <param name="flags">Controls the state of the user available digital out pins.</param>
+            <param name="inst">Which instruction to use.</param>
+            <param name="inst_data">Some instructions require additional data. This allows that data to be specified.</param>
+            <param name="duration">Time until the next instruction is executed in nanoseconds.</param>
+        </member>
+        <member name="M:SpinCore.SpinAPI.SpinAPI.MonitorBoardCount">
+            <summary>
+            Board count monitoring thread function
+            </summary>
+        </member>
+        <member name="P:SpinCore.SpinAPI.SpinAPI.Version">
+            <summary>
+            Returns spinAPI version information as string
+            </summary>
+        </member>
+        <member name="P:SpinCore.SpinAPI.SpinAPI.CurrentBoard">
+            <summary>
+            Gets or sets the current board starting from 0
+            </summary>
+        </member>
+        <member name="P:SpinCore.SpinAPI.SpinAPI.BoardCount">
+            <summary>
+            Gets the number of boards supported by SpinAPI
+            </summary>
+        </member>
+        <member name="P:SpinCore.SpinAPI.SpinAPI.Status">
+            <summary>
+            Gets the current board status
+            </summary>
+        </member>
+        <member name="P:SpinCore.SpinAPI.SpinAPI.Error">
+            <summary>
+            Gets the most recent error string
+            </summary>
+        </member>
+        <member name="E:SpinCore.SpinAPI.SpinAPI.BoardCountChanged">
+            <summary>
+            Board count changed event
+            </summary>
+        </member>
+        <member name="T:SpinCore.SpinAPI.SpinAPI.BoardCountChangedHandler">
+            <summary>
+            Event handler notifies if the number of boards is changed
+            </summary>
+            <param name="Sender"></param>
+            <param name="BoardNumber">Return newly acquired device number</param>
+        </member>
+        <member name="T:SpinCore.SpinAPI.OverflowCounts">
+            <summary>
+            Overflow counters
+            </summary>
+        </member>
+        <member name="M:SpinCore.SpinAPI.OverflowCounts.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the OverflowCounts class.
+            </summary>
+            <param name="adc">Number of overflows that occur when sampling data at the ADC.</param>
+            <param name="cic">Number of overflows that occur after the CIC filter.</param>
+            <param name="fir">Number of overflows that occur after the FIR filter.</param>
+            <param name="average">Number of overflows that occur during the averaging process.</param>
+        </member>
+        <member name="P:SpinCore.SpinAPI.OverflowCounts.AdcOverflows">
+            <summary>
+            Gets the number of overflows that occur when sampling data at the ADC.
+            </summary>
+        </member>
+        <member name="P:SpinCore.SpinAPI.OverflowCounts.CicOverflows">
+            <summary>
+            Gets the number of overflows that occur after the CIC filter.
+            </summary>
+        </member>
+        <member name="P:SpinCore.SpinAPI.OverflowCounts.FirOverflows">
+            <summary>
+            Gets the number of overflows that occur after the FIR filter.
+            </summary>
+        </member>
+        <member name="P:SpinCore.SpinAPI.OverflowCounts.AverageOverflows">
+            <summary>
+            Gets the number of overflows that occur during the averaging process.
+            </summary>
+        </member>
+    </members>
+</doc>
