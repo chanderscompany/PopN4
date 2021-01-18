@@ -1,0 +1,13 @@
+dir32.txt
+ippcore-6.1.dll
+ippdefs_cs.dll
+ipps-6.1.dll
+ippsp8-6.1.dll
+ippspx-6.1.dll
+ippss8-6.1.dll
+ippst7-6.1.dll
+ippsv8-6.1.dll
+ippsw7-6.1.dll
+ippsx86-6.1.dll
+ipps_cs.dll
+libiomp5md.dll
