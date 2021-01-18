@@ -1,0 +1,37 @@
+<Job>
+Name = "POPN4 Install (2)"
+Dir1 = <Connect>
+  Url = "file:///C:/POPN4 Install"
+  BadCerts = Yes
+</Connect>
+Dir2 = <Connect>
+  Url = "file:///e:/POPN4 Install"
+  BadCerts = Yes
+</Connect>
+Direction = 1
+PropagateDeletions = No
+CleanupOldGenerations = Yes
+FolderLinks = 0
+FileLinks = 2
+FiltersExcluded = <FileMask>
+Matches = (
+  "name *.parx"
+  "name *.InstallLog"
+  "name POPN3Service.InstallState"
+  "name *.Log"
+  "name *.xml"
+  "name *.config"
+  "name *.lnk"
+  "*.vshost.exe"
+  "name *.manifest"
+  "name DebugStatus2.txt"
+  "/POPN4Service.InstallState"
+  "/Interop.SpeechLib.xxx.dll"
+) </FileMask>
+ExcludeHidden = Yes
+ExcludeSystem = Yes
+ReconnectAttempts = 3
+TimerIntervalHours = 2
+DetectMovesAndRenames = Yes
+DetectFolderMoves = Yes
+</Job>

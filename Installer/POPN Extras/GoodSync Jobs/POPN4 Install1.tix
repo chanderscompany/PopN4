@@ -1,0 +1,72 @@
+<Job>
+Name = "POPN4 Install (1)"
+Dir1 = <Connect>
+  Url = "file:///C:/Users/Dave/Documents/Visual Studio 2013/Projects/POPN4/POPN4/bin/Debug"
+  BadCerts = Yes
+</Connect>
+Dir2 = <Connect>
+  Url = "file:///C:/POPN4 Install"
+  BadCerts = Yes
+</Connect>
+Direction = 1
+PropagateDeletions = No
+CleanupOldGenerations = Yes
+FolderLinks = 0
+FileLinks = 2
+FiltersExcluded = <FileMask>
+Matches = (
+  "name de"
+  "name es"
+  "name fr"
+  "name hu"
+  "name pt"
+  "name ru"
+  "name sk"
+  "name sv"
+  "name ZGraphDac.resources.dll"
+  "name zh-cn"
+  "name zh-tw"
+  "name it"
+  "name ja"
+  "name tr"
+  "/IPP Dlls 64-bit"
+  "name *.pdb"
+  "name *.xxx"
+  "/POPN2.vshost.exe.config"
+  "name *.Log"
+  "/POPN2_position.xml"
+  "/POPN2_State.xml"
+  "/ZGraphDac.xml"
+  "/_INSTALL_README.txt"
+  "/Copy of Sample.parx"
+  "/DebugStatus.txt"
+  "/SampleReplay.parx"
+  "/POPN3_State.xml"
+  "/DebugStatus2.txt"
+  "name *.parx"
+  "/POPN3.vshost.exe"
+  "name *.InstallLog"
+  "name *.InstallState"
+  "/InstallUtil.InstallLog"
+  "name *.seq"
+  "/Dave.txt"
+  "/zzzz.txt"
+  "/POPN4.vshost.exe"
+  "/POPN4_State.xml"
+  "/Triads.txt"
+  "/POPN4_State_copy.xml"
+  "/_/triads.14123.txt"
+  "/_"
+  "/POPN4.exe.CodeAnalysisLog.xml"
+  "/POPN4.exe.lastcodeanalysissucceeded"
+  "/Interop.SpeechLib.xxx.dll"
+  "/Interop.SpeechLibyyy.dll"
+  "/ippcore-6.1xxx.dll"
+) </FileMask>
+ExcludeHidden = Yes
+ExcludeSystem = Yes
+ReconnectAttempts = 3
+TimerIntervalHours = 2
+DetectMovesAndRenames = Yes
+DetectFolderMoves = Yes
+</Job>
