@@ -1,0 +1,13 @@
+dir64.txt
+ippcoreem64t-6.1.dll
+ippdefs_cs.dll
+ipps-6.1.dll
+ippse9-6.1.dll
+ippsem64t-6.1.dll
+ippsm7-6.1.dll
+ippsmx-6.1.dll
+ippsn8-6.1.dll
+ippsu8-6.1.dll
+ippsy8-6.1.dll
+ipps_cs.dll
+libiomp5md.dll
