@@ -586,7 +586,7 @@
             this.Controls.Add(this.labelCurrentParxFile);
             this.MinimumSize = new System.Drawing.Size(270, 120);
             this.Name = "POPN4MainForm";
-            this.Text = "POPN 4.15.1 (2016/02/26)";
+            this.Text = "POPN 4.20.0 (2021/01/25)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.POPNMainForm_FormClosing);
             this.Load += new System.EventHandler(this.POPN4MainForm_Load);
             this.groupBoxService.ResumeLayout(false);

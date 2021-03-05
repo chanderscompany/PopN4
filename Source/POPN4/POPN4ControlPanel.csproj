@@ -23,12 +23,12 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\0_Bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -47,31 +47,47 @@
     <StartupObject>
     </StartupObject>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\0_Bin\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\0_Bin\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AD9959EvalBd, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\AD9959EvalBd\bin\Debug\AD9959EvalBd.dll</HintPath>
-    </Reference>
-    <Reference Include="DACarter.ClientServer">
-      <HintPath>..\DACarter.ClientServer\bin\Debug\DACarter.ClientServer.dll</HintPath>
-    </Reference>
-    <Reference Include="DACarter.PopUtilities">
-      <HintPath>..\DACarter.PopUtilities\DACarter.PopUtilities\bin\Debug\DACarter.PopUtilities.dll</HintPath>
-    </Reference>
-    <Reference Include="DAQDevice, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DAQDevice\bin\Debug\DAQDevice.dll</HintPath>
-    </Reference>
-    <Reference Include="POPCommServer">
-      <HintPath>..\POPCommServer\bin\Debug\POPCommServer.dll</HintPath>
-    </Reference>
-    <Reference Include="POPN4Service">
-      <HintPath>..\POPN4Service\bin\Debug\POPN4Service.exe</HintPath>
-    </Reference>
-    <Reference Include="PulseGenDevice, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\PulseGenDevice\bin\Debug\PulseGenDevice.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
@@ -79,9 +95,6 @@
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="ZGraphDac">
-      <HintPath>..\ZGraphDac\bin\Debug\ZGraphDac.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="POPN4MainForm.cs">
@@ -162,13 +175,41 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AD9959EvalBd\AD9959EvalBd.csproj">
+      <Project>{7cdef638-ec9c-4f14-85b8-f4923698f85e}</Project>
+      <Name>AD9959EvalBd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DACarter.ClientServer\DACarter.ClientServer.csproj">
+      <Project>{741631bc-e2fd-441f-a565-ea355787b303}</Project>
+      <Name>DACarter.ClientServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DACarter.PopUtilities\DACarter.PopUtilities\DACarter.PopUtilities.csproj">
+      <Project>{c10c6749-48e2-496a-9503-5449e2f34ce2}</Project>
+      <Name>DACarter.PopUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAQDevice\DAQDevice.csproj">
+      <Project>{78bed94f-01b9-446f-8084-145b3ec0753f}</Project>
+      <Name>DAQDevice</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Ippdefs\ippdefs.csproj">
       <Project>{2a375df3-8404-4c52-bb24-9d51c2502b81}</Project>
       <Name>ippdefs</Name>
     </ProjectReference>
+    <ProjectReference Include="..\POPCommServer\POPCommunication.csproj">
+      <Project>{68124b13-c2db-4574-a9f2-bd2672e4d4aa}</Project>
+      <Name>POPCommunication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POPN4Service\POPN4Service.csproj">
+      <Project>{42bd505d-fa91-45cc-b860-ba2bb7bcfd69}</Project>
+      <Name>POPN4Service</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ProgressBar3\Source\Control\Xp ProgressBar.csproj">
       <Project>{98348d7a-6606-4cea-bac9-859d435c5988}</Project>
       <Name>Xp ProgressBar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PulseGenDevice\PulseGenDevice.csproj">
+      <Project>{56d2f689-413d-4c58-a720-e1ad822cbf70}</Project>
+      <Name>PulseGenDevice</Name>
     </ProjectReference>
     <ProjectReference Include="..\Utilities.Graphics\Utilities.Graphics.csproj">
       <Project>{67699c72-de24-4ae0-935f-2df92ed14274}</Project>
@@ -177,6 +218,10 @@
     <ProjectReference Include="..\Utilities\Utilities.csproj">
       <Project>{047ba7b6-8ba0-4e2c-8d77-d833bd050a07}</Project>
       <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZGraphDac\ZGraphDac.csproj">
+      <Project>{2541686b-1673-43bf-af89-3163945db009}</Project>
+      <Name>ZGraphDac</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
