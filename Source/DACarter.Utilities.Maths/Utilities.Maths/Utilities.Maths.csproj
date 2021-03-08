@@ -107,11 +107,11 @@
   <ItemGroup>
     <Reference Include="MathNet.Iridium, Version=2008.8.16.470, Culture=neutral, PublicKeyToken=c061a3ec32cc0c6f, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Libs\MathNet.Iridium.dll</HintPath>
+      <HintPath>..\..\Libs\MathNetNumerics\MathNetIridiumm(original)\MathNet.Iridium.dll</HintPath>
     </Reference>
     <Reference Include="NumericalMethodsLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Libs\NumericalMethodsLibrary.dll</HintPath>
+      <HintPath>..\..\Libs\NumericalMethodsLibrary\1.0.0.0\NumericalMethodsLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">

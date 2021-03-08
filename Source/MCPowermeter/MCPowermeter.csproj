@@ -69,9 +69,8 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="mcl_pm64, Version=14.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Libs\mcl_pm64.dll</HintPath>
+    <Reference Include="mcl_pm64">
+      <HintPath>..\Libs\MCPowerMeter\18.0.0.2\mcl_pm64.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />

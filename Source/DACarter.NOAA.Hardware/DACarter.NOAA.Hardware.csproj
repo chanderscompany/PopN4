@@ -103,18 +103,16 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interop.DAQCOMLib - 32bit, Version=2.401.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DAQDevice\Interop.DAQCOMLib - 32bit.dll</HintPath>
+    <Reference Include="Interop.DAQCOMLib - 32bit">
+      <HintPath>..\Libs\DaqBoard3005USB\DAQCOM\2.401.0.0\32bit\Interop.DAQCOMLib - 32bit.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="LibUsbDotNet, Version=2.2.8.104, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Libs\LibUsbDotNet.dll</HintPath>
+      <HintPath>..\Libs\AD9959DDS\LibUsbDotNet\LibUsbDotNet.dll</HintPath>
     </Reference>
-    <Reference Include="mcl_pm64, Version=14.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Libs\mcl_pm64.dll</HintPath>
+    <Reference Include="mcl_pm64">
+      <HintPath>..\Libs\MCPowerMeter\18.0.0.2\mcl_pm64.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

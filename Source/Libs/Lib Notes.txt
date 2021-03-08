@@ -1,0 +1,47 @@
+LibUSBK: (DDS)
+ Projects: AD9959EvalBd, DaveCarter.NOAA.Hardware 
+ Version in use is LibUsbDotNet.dll 2.2.5.61
+ Latest version (3.0.7.0) is from 2014 and does not support higher than Win2000
+ Same for 32 and 64
+ Install:
+  Run libusbK-inf-wizard.exe
+  Select LibUsbK from driver list.
+  Select device 0456:ee06  or 0456:ee07 from device list.
+  Install drivers.
+ https://sourceforge.net/projects/libusbk/
+ http://libusbk.sourceforge.net/UsbK3/index.html
+
+MathNet.Iridium
+ Projects: PopN4Service, Utilities.Maths
+ Current version is MathNet.iridium 2008.8.16.470
+ Latest version is Math.Net.Numerics 4.15.0 -2020
+ https://iridium.mathdotnet.com/
+ https://numerics.mathdotnet.com/
+
+Numerical Methods Library
+ Projects: Utilities.Maths
+ Does not appear to be available anymore
+ https://archive.codeplex.com/?p=numerical (will disappear on July 1, 2021)
+ Downloaded the archive that included source but does not appear to include the dll or the install.zip Dave refers to.
+
+Interop.DAQCOMLib
+ Projects: DaveCarter.NOAA.Hardware, DAQDevice
+
+MccDaQ
+ Projects DAQDevice
+
+
+DAQCOM:
+ For DaqBoard3005USB board
+ 32 and 64 bit dlls
+
+MCPowerMeter
+ Projects: DaveCarter.NOAA.Hardware, MCPowerMeter
+ Original version 14.0.0.0 
+ Lates verstion 18.0.0.2
+ mcl_pm_NET45.dll is the current dll, mcl_pm64.dll is the previous version
+ https://www.minicircuits.com/softwaredownload/pm.html
+
+
+ISSUES:
+ LibUsbK will not register in VS as a reference. Had to use the old LibUsbDotNet
