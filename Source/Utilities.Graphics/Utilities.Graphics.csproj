@@ -172,9 +172,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ZGraphDac.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\ZGraphDac\ZGraphDac.csproj">
       <Project>{2541686b-1673-43bf-af89-3163945db009}</Project>
       <Name>ZGraphDac</Name>

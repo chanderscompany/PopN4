@@ -175,9 +175,9 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AD9959EvalBd\AD9959EvalBd.csproj">
-      <Project>{7cdef638-ec9c-4f14-85b8-f4923698f85e}</Project>
-      <Name>AD9959EvalBd</Name>
+    <ProjectReference Include="..\AD9959EvalBdUsbK\AD9959EvalBdUsbK.csproj">
+      <Project>{b68a681d-4620-4169-9753-72e0c99eb612}</Project>
+      <Name>AD9959EvalBdUsbK</Name>
     </ProjectReference>
     <ProjectReference Include="..\DACarter.ClientServer\DACarter.ClientServer.csproj">
       <Project>{741631bc-e2fd-441f-a565-ea355787b303}</Project>

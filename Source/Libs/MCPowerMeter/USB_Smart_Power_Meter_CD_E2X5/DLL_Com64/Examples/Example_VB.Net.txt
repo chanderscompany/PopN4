@@ -1,0 +1,8 @@
+' mcl_pm64.dll should be loaded as a reference file to the project project
+ Dim pm1 As New mcl_pm64.usb_pm, Status As Short
+        Dim SN As String = "" 'if more then 1 sensor connected to the computer than the Serial Number of the sensor should provide
+        Dim ReadResult As Single
+        Status = pm1.Open_Sensor(SN)  
+        pm1.Freq = 3000       ' Set the Frequency cal factor in MHz
+        ReadResult = pm1.ReadPower() ' read the power in dbm
+        pm1.Close_Sensor()

@@ -1,0 +1,61 @@
+; Installation inf for the Delcom USB Driver
+;
+; (c) Copyright 2008 Delcom Products
+; 01/10/2010
+
+
+
+[Version]
+Signature=$CHICAGO$
+Class        = USB
+;ClassGUID={36fc9e60-c465-11cf-8056-444553540000} 
+Provider=%String0%
+DriverVer = 01/18/2010,4.7.0.0
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Manufacturer]
+%String0%=Delcom
+
+[Delcom]
+%String2%=USBIODS,USB\VID_0FC5&PID_1222
+
+[USBIODS]
+CopyFiles=Common.CopyList
+AddReg=Common.AddReg
+
+[USBIODS.NT]
+CopyFiles=Common.CopyList
+AddReg=Common.AddReg
+
+[USBIODS.NT.Services]
+Addservice = USBIODS, 0x00000002, Common.AddService
+
+[DestinationDirs]
+DefaultDestDir 		= 10, System32\drivers
+Common.CopyList       	= 10, System32\drivers
+
+[Common.CopyList]
+USBIODS.sys
+
+[Common.AddReg]
+HKR,,DevLoader,0,*ntkern
+HKR,,NTMPDriver,0,USBIODS.sys
+HKLM,System\Currentcontrolset\Services\Delcom\USBIODS\Parameters,DebugLevel,1,00
+HKLM,System\Currentcontrolset\Services\Delcom\USBIODS\Parameters,BootupTest,1,00
+HKLM,System\Currentcontrolset\Services\Delcom\USBIODS\Parameters,PowerDownLevel,1,00
+
+
+[Common.AddService]
+DisplayName    = %String2%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\USBIODS.sys
+LoadOrderGroup = Base
+
+
+[Strings]
+String0="Delcom Products Inc."
+String2="Delcom USB IO Driver"

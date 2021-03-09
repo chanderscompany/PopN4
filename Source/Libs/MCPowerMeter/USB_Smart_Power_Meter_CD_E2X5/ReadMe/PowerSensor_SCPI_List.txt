@@ -1,0 +1,78 @@
+SCPI commands may send to the Sensor by Ethernet or for some models by USB :
+
+SCPI_Command List: (Supported by model: PWR-SEN-8GHS-RC , PWR-SEN-8P-RC and SSG-6400HS)
+:FREQ:<value>   - Value is always in MHz Example:  :FREQ:2355
+:TEMP:FORMAT:<X> - X can be "C" for Celsius ( °C) or "F" for Fahrenheit (°F)
+:MODE:<mode> - valid number for mode is: 0 for Low Noise mode, 1 for faster mode and 2 (if supported)  for Very fast mode. Example: :MODE:1
+:AVG:COUNT<count> - Set the Avg Count. example: :AVG:COUNT:8
+:AVG:STATE:X -  if X=1 then Enable AVG. if X=0 - disable AVG. (default state is 0 (Disable).
+
+SCPI QUERY List:  
+:POWER?           Example:   :POWER?   return: -22.05 dBm.
+:FREQ?   - Get the current Frequency ( as it set for cal factor calculation ).
+:MN?  - Get the Power Sensor Model Mame
+:SN? - Get the Power Sensor Serial Number.
+:FIRMWARE? - Get the Firmware.
+:TEMP? - Get the device temperature.
+:TEMP:FORMAT? - Get the current Temperature format. 
+:MODE?    - Get the Sensor mode: 0 for Low Noise 1 for fast mode , 2 for fastest mode.
+:AVG:STATE? - return 1 if the AVG is enabled or 0 if Disabled
+:AVG:COUNT? - get the AVG count value.
+:VOLTAGE? - reading voltage.
+
+
+SCPI commands/Queries related only to Peak Power Sensor Model PWR-SEN-8P-RC:
+
+:TRIGGER:MODE:FREE  ( :TRIGGER:MODE? )  - set trigger mode to Free
+:TRIGGER:MODE:INTERNAL  ( :TRIGGER:MODE? )
+:TRIGGER:MODE:EXTERNAL  ( :TRIGGER:MODE? )
+:TRIGGER:EXTERNAL:ONFALL ( :TRIGGER:EXTERNAL:ONFALL? )
+:TRIGGER:EXTERNAL:ONRISE ( :TRIGGER:EXTERNAL:ONRISE? )
+:TRIGGER:DELAY:[Delay_usec] ( :TRIGGER:DELAY? ) - set a delay value right after the trigger before sampling the signal.
+:EXTOUT:SELECT:VIDEO  ( :EXTOUT:SELECT? ) 
+:EXTOUT:SELECT:TRIG   ( :EXTOUT:SELECT? ) 
+:SAMPLETIME:[SampleTime_usec]  ( :SAMPLETIME? ) - set the sample time valid value is integer between 10 to 1000000
+
+:POWER_ARRAY?      -  read the power array values of the first package ( package #0 ). First 2 numbers are Number of packages and the array size
+:POWER_ARRAY_EP1?  -  read package #1
+:POWER_ARRAY_EP2?  -  read package #2
+:POWER_ARRAY_EP3?  -  read package #3
+:POWER_ARRAY_EP4?  -  read package #4
+:POWER_ARRAY_EP5?  -  read package #5
+:POWER_ARRAY_EP6?  -  read package #6
+:POWER_ARRAY_EP7?  -  read package #7
+:POWER_ARRAY_EP8?  -  read package #8
+:POWER_ARRAY_EP9?  -  read package #9
+:POWER_ARRAY_EP10?  - read package #10
+
+
+
+
+
+SCPI commands/Queries related only to FCPM-6000RC Model:
+
+:FC:RANGE:<range> - set the freq. counter range
+:FC:SAMPLETIME:<sampletime> - set the sample time of the Freq. Counter. sample time in msec can be from 100 to 3000.
+:FC:AUTOFREQ:<autofreq> - Set the autofreq indicator for the Frquency counter. 1 for yes. 0 for user defined CAL frequncy.
+
+:FC:FREQ?POWER? - Get the latest reading of the Frequeny (Mhz)  and the power (dbm).
+:FC:FREQ? - Get the latest reading of the Frequeny (Mhz).
+:FC:REF? - Get the Frequency External ref detector. return ExtRef or IntRef..
+:FC:RANGE? - Get the Actual current range.
+:FC:RRANGE? - get the last user requested range.
+:FC:SAMPLETIME? - get the Freq. Counter Sample time .
+:FC:AUTOFREQ? - Get the autofreq indicator for the Frquency counter. 1 for yes. 0 for user defined CAL frequncy.
+
+
+
+
+
+For the entire SCAPI Command and Query List refer to the Programming Guide of the specific device.
+
+Communication With the Device with Telnet Protocol:
+
+Communication with the device started by creating a Telnet Connection and receiving LF (Line feed) from the Device.
+if Password is required then the first command that must be sent is: PWD=[Password].
+any legal command can be send in Telnet and must be followed by LF (Line Feed).
+
+

@@ -1,0 +1,12 @@
+ // mcl_pm.dll should be loaded as a reference file to the project project
+  
+mcl_pm::USB_PM ^pm1 = gcnew mcl_pm::USB_PM();
+short Status = 0;
+System::String ^SN = "";  //if more then 1 sensor connected to the computer than the Serial Number of the sensor should provide
+float ReadResult = 0;
+Status = pm1->Open_Sensor(SN);
+pm1->Freq = 3000;          // Set the Frequency cal factor in MHz
+ReadResult = pm1->ReadPower();  // read the power in dbm
+pm1->Close_Sensor(); 
+ 
+

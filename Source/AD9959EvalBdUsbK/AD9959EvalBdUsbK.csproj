@@ -80,8 +80,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Libs\AD9959DDS\LibUsbK\3.0.7.0\bindings\libusbK.cs">
+      <Link>libusbK.cs</Link>
+    </Compile>
     <Compile Include="AD9959EvalBdUsbK.cs" />
-    <Compile Include="libusbK.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsbHelper_LibUsbK.cs" />
   </ItemGroup>

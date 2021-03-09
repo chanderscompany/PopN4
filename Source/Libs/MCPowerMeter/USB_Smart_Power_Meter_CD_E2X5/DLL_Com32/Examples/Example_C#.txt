@@ -1,0 +1,9 @@
+  // mcl_pm.dll should be loaded as a reference file to the project project
+  double ReadResult;
+  mcl_pm.usb_pm pm1 = new mcl_pm.usb_pm();
+  short Status = 0;
+  string pm_SN = ""; //if more then 1 sensor connected to the computer than the Serial Number of the sensor should provide
+  Status  = pm1.Open_Sensor(pm_SN);   
+    pm1.Freq = 3000;      // Set the Frequency cal factor in MHz
+    ReadResult= pm1.ReadPower() ; // read the power in dbm
+    pm1.Close_Sensor();  
