@@ -1,12 +1,6 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
-//using MathNet.Numerics;
-using DACarter.PopUtilities;
-using DACarter.Utilities.Maths;
-using ipp;
 
-using POPCommunication;
+using DACarter.PopUtilities;
 
 namespace POPN {
 

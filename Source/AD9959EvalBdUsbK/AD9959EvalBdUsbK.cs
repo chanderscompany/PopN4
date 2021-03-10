@@ -1,16 +1,10 @@
 ﻿using System;
-//using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Windows.Forms;
 using System.Threading;
 
-//using libusbK;
 using UsbHelper;
-
 using DACarter.Utilities;
 using DACarter.PopUtilities;
-
-
 
 namespace DACarter.NOAA.Hardware {
 

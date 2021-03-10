@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using DACarter.Utilities;
-using DACarter.PopUtilities;
+﻿using DACarter.Utilities;
 using POPCommunication;
 
 namespace POPN4Service {

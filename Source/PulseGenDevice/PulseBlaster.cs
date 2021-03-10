@@ -1,10 +1,8 @@
 using System;
-using DACarter.PopUtilities;
-using DACarter.Utilities;
-using System.Windows.Forms;
 using System.Threading;
-
 using SpinCore.SpinAPI;
+
+using DACarter.PopUtilities;
 
 namespace DACarter.NOAA.Hardware {
 

@@ -4,8 +4,6 @@ using System.IO;
 using System.Text;
 using System.Net.Sockets;
 using System.Diagnostics;
-using System.Runtime.Remoting;
-using System.Runtime.Remoting.Messaging;
 
 /*
  * FTP Client library in C#

@@ -1,4 +1,5 @@
 ﻿using System;
+
 using DACarter.PopUtilities;
 
 namespace DACarter.NOAA.Hardware {

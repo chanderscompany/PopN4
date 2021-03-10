@@ -1,9 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Xml.Serialization;
 using System.Xml;
 using System.IO;
+
 using DACarter.Utilities;
 
 namespace DACarter.PopUtilities {

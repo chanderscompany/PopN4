@@ -1,8 +1,6 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 using MathNet.Numerics;
-using DACarter.Utilities;
+
 
 using ipp;	// Intel IPP Math Library
 

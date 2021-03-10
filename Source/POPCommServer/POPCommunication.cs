@@ -6,12 +6,11 @@
 using System;
 using System.ServiceModel;
 using System.Threading;
-//using System.Collections.Generic;
-using ipp;
+using System.IO;
 
+using ipp;
 using DACarter.ClientServer;
 using DACarter.PopUtilities;
-using System.IO;
 
 namespace POPCommunication {
 

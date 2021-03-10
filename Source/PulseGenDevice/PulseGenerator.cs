@@ -1,8 +1,6 @@
 using System;
 
-using SpinCore.SpinAPI;
 using DACarter.PopUtilities;
-using System.Threading;
 
 namespace DACarter.NOAA.Hardware {
 	/// <summary>

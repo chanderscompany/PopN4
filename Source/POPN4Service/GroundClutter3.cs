@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 using DACarter.PopUtilities;
-using DACarter.Utilities.Maths;
 using DACarter.Utilities;
-using System.Collections;
+
 
 namespace POPN {
 

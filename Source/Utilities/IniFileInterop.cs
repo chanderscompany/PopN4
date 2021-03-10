@@ -2,8 +2,6 @@ using System;
 using System.Runtime.InteropServices;
 using System.Collections.Specialized;
 using System.Text;
-using System.IO;
-//using IniFileInterop;
 
 namespace INIFileInterop {
 	/// <summary>

@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Windows.Forms;
-using System.Diagnostics;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-using System.IO.MemoryMappedFiles;
-using System.Runtime.InteropServices;
+using System.Runtime;
 
 using ipp;
-
 using DACarter.PopUtilities;
-using System.Runtime;
 
 namespace POPN {
 

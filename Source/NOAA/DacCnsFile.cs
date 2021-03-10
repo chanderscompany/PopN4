@@ -1,6 +1,5 @@
 using System;
 using System.Text.RegularExpressions;
-using DACarter.NOAA;
 
 namespace DACarter.NOAA
 {

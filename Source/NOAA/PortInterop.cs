@@ -12,7 +12,6 @@
  * ! Don't remove or alter this notice in any distribution !
  * 
  * -----------------------------------------------------------------*/
-using System;
 using System.Runtime.InteropServices;
 
 public class PortAccess

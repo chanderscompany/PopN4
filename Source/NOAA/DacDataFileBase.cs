@@ -3,9 +3,6 @@ using System.Collections;
 using System.Collections.Specialized;
 using System.IO;
 using System.Text;
-using System.Text.RegularExpressions;
-using DACarter.NOAA;
-using DACarter.Utilities;
 
 namespace DACarter.NOAA
 {

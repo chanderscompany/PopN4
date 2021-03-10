@@ -1,7 +1,6 @@
 using System;
-using System.IO;
 using System.Net;
-using DACarter.NOAA;
+
 using DACarter.Utilities;
 
 namespace DACarter.NOAA

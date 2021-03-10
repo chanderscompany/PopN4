@@ -5,10 +5,10 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using DACarter.Utilities.Graphics;
-using ZedGraph;
 using MathNet.Numerics;
 using MathNet.Numerics.Transformations;
 using ipp;
+using ZedGraph;
 
 
 namespace DACarter.Utilities.Maths { 

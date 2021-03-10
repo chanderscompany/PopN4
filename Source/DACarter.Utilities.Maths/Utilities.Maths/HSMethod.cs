@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
-using MathNet.Numerics;
 
 namespace DACarter.Utilities.Maths {
 	public class HSMethod {

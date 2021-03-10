@@ -3,11 +3,9 @@ using System.Threading;
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using System.Reflection;
-using DACarter.Utilities;
+using System.IO;
 
 using MccDaq;
-using System.Windows.Forms;
-using System.IO;
 
 namespace DACarter.NOAA.Hardware {
 

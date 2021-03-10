@@ -9,8 +9,6 @@ using System.Runtime.Remoting.Lifetime;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
 
-//using System.Runtime.Remoting.Channels;
-
 namespace DACarter.Utilities
 {
 	/// <summary>

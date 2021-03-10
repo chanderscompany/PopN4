@@ -1,31 +1,22 @@
 ﻿using System;
-using System.Runtime;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
-//using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
-using System.Runtime.InteropServices;
-//using System.Drawing;
-using MathNet.Numerics;
 
-using DAQCOMLib;
 using ipp;
-
 using POPCommunication;
 using DACarter.PopUtilities;
 using DACarter.NOAA.Hardware;
 using DACarter.Utilities;
 using DACarter.Utilities.Maths;
-
-
 using POPN;
-using System.IO.MemoryMappedFiles;
+
 
 
 namespace POPN4Service {

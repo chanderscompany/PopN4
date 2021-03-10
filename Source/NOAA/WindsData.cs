@@ -1,5 +1,4 @@
 using System;
-using DACarter.NOAA;
 
 namespace DACarter.NOAA
 {

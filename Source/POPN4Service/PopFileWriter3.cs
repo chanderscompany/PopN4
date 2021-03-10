@@ -1,13 +1,9 @@
-﻿using System.Collections.ObjectModel;
-//using System.Speech.Synthesis;
-using DACarter.PopUtilities;
-using DACarter.Utilities;
-using System.IO;
+﻿using System.IO;
 using System;
 using System.Threading;
 
-using POPN4Service;
-using System.Text;
+using DACarter.PopUtilities;
+using DACarter.Utilities;
 
 namespace POPN {
 

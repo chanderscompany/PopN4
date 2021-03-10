@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Windows.Forms;
+
 using DACarter.PopUtilities;
 using DACarter.Utilities;
-using System.Threading;
 
 namespace DACarter.NOAA.Hardware {
     /// <summary>

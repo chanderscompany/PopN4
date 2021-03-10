@@ -2,11 +2,7 @@ using System;
 using System.ComponentModel;
 using System.Threading;
 using System.Runtime.InteropServices;
-using System.IO;
-//using DBComm;
-using System.Text;
 using System.IO.Ports;
-
 
 namespace DACarter.Utilities
 {

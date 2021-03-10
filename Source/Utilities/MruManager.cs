@@ -1,10 +1,5 @@
-using System;
 using System.Windows.Forms;
-//using LumiSoft.UI.Controls;
 using System.Collections;
-//using Org.Mentalis.Files;	// for IniReader
-//using INIFileInterop;
-
 
 /// <summary>
 /// The DACarter.Utilities namespace contains various .NET classes that may be useful in future projects.

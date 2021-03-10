@@ -1,8 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Specialized;
-using System.Text.RegularExpressions;
-using DACarter.Utilities;
 
 namespace DACarter.NOAA {
 

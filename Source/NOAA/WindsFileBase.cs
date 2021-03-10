@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DACarter.NOAA {
 	public abstract class WindsFileBase : DacDataFileBase {
