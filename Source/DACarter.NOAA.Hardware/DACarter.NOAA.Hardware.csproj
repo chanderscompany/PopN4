@@ -125,33 +125,12 @@
     <Compile Include="..\Libs\AD9959DDS\LibUsbK\3.0.7.0\bindings\libusbK.cs">
       <Link>libusbK.cs</Link>
     </Compile>
-    <Compile Include="..\MCPowermeter\MCPowerMeter.cs">
-      <Link>MCPowerMeter.cs</Link>
-    </Compile>
-    <Compile Include="..\PulseGenDevice\PbxControllerCard.cs">
-      <Link>PbxControllerCard.cs</Link>
-    </Compile>
-    <Compile Include="..\PulseGenDevice\PulseBlaster.cs">
-      <Link>PulseBlaster.cs</Link>
-    </Compile>
-    <Compile Include="..\PulseGenDevice\PulseGenerator.cs">
-      <Link>PulseGenerator.cs</Link>
-    </Compile>
-    <Compile Include="..\PulseGenFactory\PulseGeneratorFactory.cs">
-      <Link>PulseGeneratorFactory.cs</Link>
-    </Compile>
     <Compile Include="AD9959ConfigFile.cs" />
     <Compile Include="DaqBoard3000USB.cs" />
     <Compile Include="DataAcquisitionDevice.cs" />
     <Compile Include="DDSBoardAD9959.cs" />
     <Compile Include="FT2232SPI.cs" />
-    <Compile Include="IOPortBase.cs" />
-    <Compile Include="IOPort_inpout32.cs" />
-    <Compile Include="PortIO_TVicPort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="inpout32.dll" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
