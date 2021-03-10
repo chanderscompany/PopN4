@@ -69,8 +69,8 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interop.DAQCOMLib - 32bit">
-      <HintPath>..\Libs\DaqBoard3005USB\DAQCOM\2.401.0.0\32bit\Interop.DAQCOMLib - 32bit.dll</HintPath>
+    <Reference Include="Interop.DAQCOMLib - 64bit">
+      <HintPath>..\Libs\DaqBoard3005USB\DAQCOM\2.211.0.0\64bit\Interop.DAQCOMLib - 64bit.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="MccDaq, Version=2.9.0.0, Culture=neutral, PublicKeyToken=a37eefcf5c6ca10a, processorArchitecture=MSIL">

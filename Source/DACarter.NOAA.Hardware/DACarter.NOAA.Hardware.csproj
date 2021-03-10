@@ -103,13 +103,9 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interop.DAQCOMLib - 32bit">
-      <HintPath>..\Libs\DaqBoard3005USB\DAQCOM\2.401.0.0\32bit\Interop.DAQCOMLib - 32bit.dll</HintPath>
+    <Reference Include="Interop.DAQCOMLib - 64bit">
+      <HintPath>..\Libs\DaqBoard3005USB\DAQCOM\2.211.0.0\64bit\Interop.DAQCOMLib - 64bit.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="LibUsbDotNet, Version=2.2.8.104, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Libs\AD9959DDS\LibUsbDotNet\LibUsbDotNet.dll</HintPath>
     </Reference>
     <Reference Include="mcl_pm64">
       <HintPath>..\Libs\MCPowerMeter\18.0.0.2\mcl_pm64.dll</HintPath>
@@ -120,21 +116,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\AD9959EvalBdUsbK\AD9959EvalBdUsbK.cs">
+      <Link>AD9959EvalBdUsbK.cs</Link>
+    </Compile>
+    <Compile Include="..\AD9959EvalBdUsbK\UsbHelper_LibUsbK.cs">
+      <Link>UsbHelper_LibUsbK.cs</Link>
+    </Compile>
+    <Compile Include="..\Libs\AD9959DDS\LibUsbK\3.0.7.0\bindings\libusbK.cs">
+      <Link>libusbK.cs</Link>
+    </Compile>
+    <Compile Include="..\MCPowermeter\MCPowerMeter.cs">
+      <Link>MCPowerMeter.cs</Link>
+    </Compile>
+    <Compile Include="..\PulseGenDevice\PbxControllerCard.cs">
+      <Link>PbxControllerCard.cs</Link>
+    </Compile>
+    <Compile Include="..\PulseGenDevice\PulseBlaster.cs">
+      <Link>PulseBlaster.cs</Link>
+    </Compile>
+    <Compile Include="..\PulseGenDevice\PulseGenerator.cs">
+      <Link>PulseGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\PulseGenFactory\PulseGeneratorFactory.cs">
+      <Link>PulseGeneratorFactory.cs</Link>
+    </Compile>
     <Compile Include="AD9959ConfigFile.cs" />
-    <Compile Include="AD9959EvalBd.cs" />
     <Compile Include="DaqBoard3000USB.cs" />
     <Compile Include="DataAcquisitionDevice.cs" />
     <Compile Include="DDSBoardAD9959.cs" />
     <Compile Include="FT2232SPI.cs" />
     <Compile Include="IOPortBase.cs" />
     <Compile Include="IOPort_inpout32.cs" />
-    <Compile Include="MCPowerMeter.cs" />
-    <Compile Include="PbxControllerCard.cs" />
     <Compile Include="PortIO_TVicPort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PulseBlaster.cs" />
-    <Compile Include="PulseGenerator.cs" />
-    <Compile Include="PulseGeneratorFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="inpout32.dll" />

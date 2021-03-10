@@ -82,17 +82,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IOPortBase.cs" />
-    <Compile Include="IOPort_inpout32.cs" />
+    <Compile Include="..\DACarter.NOAA.Hardware\IOPortBase.cs">
+      <Link>IOPortBase.cs</Link>
+    </Compile>
+    <Compile Include="..\DACarter.NOAA.Hardware\IOPort_inpout32.cs">
+      <Link>IOPort_inpout32.cs</Link>
+    </Compile>
+    <Compile Include="..\DACarter.NOAA.Hardware\PortIO_TVicPort.cs">
+      <Link>PortIO_TVicPort.cs</Link>
+    </Compile>
     <Compile Include="PbxControllerCard.cs" />
-    <Compile Include="PortIO_TVicPort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PulseBlaster.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="PulseGenerator.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="PulseBlaster.cs" />
+    <Compile Include="PulseGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DACarter.PopUtilities\DACarter.PopUtilities\DACarter.PopUtilities.csproj">
