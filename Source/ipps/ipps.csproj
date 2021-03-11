@@ -92,7 +92,82 @@
       <Name>ippdefs</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippcore-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippcore-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippcorex86-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippcorex86-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ipps-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ipps-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippsp8-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippsp8-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippspx-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippspx-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippss8-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippss8-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippst7-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippst7-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippsv8-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippsv8-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippsw7-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippsw7-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippsx86-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippsx86-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\libiomp5md.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\libiomp5md.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\libiomp5md_32.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\libiomp5md_32.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippcoreem64t-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippcoreem64t-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ipps-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ipps-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippse9-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippse9-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippsem64t-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippsem64t-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippsm7-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippsm7-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippsmx-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippsmx-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippsn8-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippsn8-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippsu8-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippsu8-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippsy8-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippsy8-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\libiomp5md.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\libiomp5md.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\libiomp5md_64.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\libiomp5md_64.dll</Link>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xCopy "..\Libs\Intel Integrated Performance Primitives\64bit\*.*" $(TargetDir)
+</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
