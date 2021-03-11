@@ -10,9 +10,9 @@ using System.Reflection;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("NOAA Aeronomy Lab")]
 [assembly: AssemblyProduct("DACarter.Utilities.dll")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCopyright("Copyright © NOAA_ESRL_PSD 2021")]
 [assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]		
+[assembly: AssemblyCulture("")]
 
 //
 // Version information for an assembly consists of the following four values:
@@ -25,7 +25,9 @@ using System.Reflection;
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
 
-[assembly: AssemblyVersion("1.0.*")]
+[assembly: AssemblyVersion("5.0.0.0")]
+[assembly: AssemblyFileVersion("5.0.0.0")]
+
 
 //
 // In order to sign your assembly you must specify a key to use. Refer to the 

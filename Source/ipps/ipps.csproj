@@ -162,6 +162,9 @@
     <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\libiomp5md_64.dll">
       <Link>Intel Integrated Performance Primitives\64bit\libiomp5md_64.dll</Link>
     </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\Copy ReadMe.txt">
+      <Link>Intel Integrated Performance Primitives\Copy ReadMe.txt</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

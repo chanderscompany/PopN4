@@ -146,6 +146,9 @@
     <Content Include="..\Libs\SpinApi\64bit\spinapi64.dll">
       <Link>SpinApi\64bit\spinapi64.dll</Link>
     </Content>
+    <Content Include="..\Libs\SpinApi\Copy ReadMe.txt">
+      <Link>SpinApi\Copy ReadMe.txt</Link>
+    </Content>
     <Content Include="LICENSE.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
